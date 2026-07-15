@@ -164,17 +164,6 @@ ul { list-style: none; }
 
 .hero-inner { max-width: 780px; }
 
-.hero-badge {
-  display: inline-block;
-  background: var(--color-accent-soft);
-  color: var(--color-accent-strong);
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 0.35rem 0.9rem;
-  border-radius: 999px;
-  margin-bottom: 1.5rem;
-}
-
 .hero-title {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
   font-weight: 800;
@@ -391,14 +380,6 @@ ul { list-style: none; }
   width: 96px;
   height: 96px;
   border-radius: 24px;
-  background: var(--color-ink);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.6rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
   box-shadow: var(--shadow);
 }
 
@@ -528,7 +509,7 @@ ul { list-style: none; }
   .section { padding: 4rem 0; }
   .xp-item { grid-template-columns: 1fr; gap: 0.25rem; }
   .app-card { grid-template-columns: 1fr; padding: 1.75rem; }
-  .app-logo { width: 72px; height: 72px; border-radius: 18px; font-size: 2rem; }
+  .app-logo { width: 72px; height: 72px; border-radius: 18px; }
   .hero-cta .btn { flex: 1 1 auto; }
   .project-card, .contact-form { padding: 1.5rem; }
 }
