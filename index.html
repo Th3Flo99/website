@@ -3,270 +3,700 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florian Ronsse, ICT Field Engineer | IT Support &amp; Network Engineer</title>
-  <meta name="description" content="Portfolio van Florian Ronsse, ICT Field Engineer bij Electro Contractors in Waregem. Ervaring in IT support, network engineering, IT troubleshooting en system administration.">
-  <meta name="keywords" content="ICT support, network engineer, field engineer, IT troubleshooting, system administration, IT support, netwerkbeheer, systeembeheer, UniFi, Proxmox">
+
+  <!-- Title and description are swapped per language by js/main.js (keys meta.*) -->
+  <title>Florian Ronsse | IT Support en Field Technology</title>
+  <meta name="description" content="Portfolio van Florian Ronsse, IT Support en Field Technology professional uit Oudenaarde. Meer dan drie jaar B2B-supportervaring en een zelfgebouwd homelab met UniFi, Proxmox, Linux en Docker.">
   <meta name="author" content="Florian Ronsse">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1f3a">
+
+  <link rel="canonical" href="https://florianronsse.net/">
+  <link rel="alternate" hreflang="nl" href="https://florianronsse.net/">
+  <link rel="alternate" hreflang="en" href="https://florianronsse.net/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://florianronsse.net/">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Florian Ronsse, ICT Field Engineer">
-  <meta property="og:description" content="ICT Field Engineer bij Electro Contractors. IT support, network engineering en troubleshooting, hands-on en on-site.">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Florian Ronsse">
+  <meta property="og:url" content="https://florianronsse.net/">
+  <meta property="og:title" content="Florian Ronsse | IT Support en Field Technology">
+  <meta property="og:description" content="IT Support en Field Technology professional uit Oudenaarde. B2B-supportervaring, on-site technische ondersteuning en een zelfgebouwd homelab met UniFi, Proxmox, Linux en Docker.">
   <meta property="og:locale" content="nl_BE">
   <meta property="og:locale:alternate" content="en_US">
+  <!-- TODO: plaats een sharing image van 1200x630 px op assets/og-image.png.
+       Zolang dat bestand ontbreekt tonen sociale netwerken gewoon geen preview-afbeelding. -->
+  <meta property="og:image" content="https://florianronsse.net/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Florian Ronsse, IT Support en Field Technology">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b1f3a'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>FR</text></svg>">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Florian Ronsse | IT Support en Field Technology">
+  <meta name="twitter:description" content="IT Support en Field Technology professional uit Oudenaarde. B2B-supportervaring, on-site technische ondersteuning en een zelfgebouwd homelab.">
+  <meta name="twitter:image" content="https://florianronsse.net/assets/og-image.png">
+
+  <!-- Favicon als inline SVG: geen extra request, geen los bestand.
+       De < en > zijn URL-encoded (%3C / %3E) zodat de data-URI geldige HTML is. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%230b1f3a'/%3E%3Ctext%20x='50'%20y='68'%20font-size='52'%20font-family='Arial'%20font-weight='bold'%20fill='%230284c7'%20text-anchor='middle'%3EFR%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Florian Ronsse",
+    "url": "https://florianronsse.net/",
     "jobTitle": "ICT Field Engineer",
     "worksFor": {
       "@type": "Organization",
-      "name": "Electro Contractors",
-      "address": { "@type": "PostalAddress", "addressLocality": "Waregem", "addressCountry": "BE" }
+      "name": "Electro Contractors"
     },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Oudenaarde",
       "addressCountry": "BE"
     },
-    "sameAs": ["https://www.linkedin.com/in/florian-ronsse-1914231bb"],
-    "knowsAbout": ["IT Support", "Network Engineering", "IT Troubleshooting", "System Administration", "Field Engineering", "UniFi", "Proxmox", "Docker", "Linux"]
+    "knowsLanguage": ["nl", "en"],
+    "sameAs": [
+      "https://www.linkedin.com/in/florian-ronsse-1914231bb",
+      "https://github.com/Th3Flo99"
+    ],
+    "knowsAbout": [
+      "IT Support",
+      "Field Technology",
+      "Network Support",
+      "Systems Administration",
+      "Technical Operations",
+      "End User Support",
+      "Troubleshooting",
+      "UniFi",
+      "VLAN",
+      "Proxmox",
+      "Docker",
+      "Linux"
+    ]
   }
   </script>
 </head>
 <body>
 
+<a class="skip-link" href="#main" data-i18n="skip.link">Ga naar inhoud</a>
+
 <header class="site-header">
-  <nav class="nav container" aria-label="Hoofdnavigatie">
-    <a href="#home" class="nav-logo">FR<span class="accent">.</span></a>
+  <nav class="nav container" aria-label="Hoofdnavigatie" data-i18n-aria-label="nav.aria">
+    <a href="#top" class="nav-logo">FR<span class="accent">.</span></a>
 
     <ul class="nav-links" id="nav-links">
       <li><a href="#about" data-i18n="nav.about">Over mij</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Ervaring</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projecten</a></li>
       <li><a href="#skills" data-i18n="nav.skills">Vaardigheden</a></li>
-      <li><a href="#projects" data-i18n="nav.projects">Ervaring</a></li>
       <li><a href="#roundfair">Roundfair</a></li>
       <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="btn btn-small btn-outline nav-linkedin">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-          LinkedIn
-        </a>
-      </li>
     </ul>
 
     <div class="nav-actions">
-      <div class="lang-toggle" role="group" aria-label="Taalkeuze / Language">
+      <a class="icon-btn" href="https://github.com/Th3Flo99" target="_blank" rel="noopener"
+         aria-label="GitHub-profiel van Florian Ronsse" data-i18n-aria-label="nav.github">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener"
+         aria-label="LinkedIn-profiel van Florian Ronsse" data-i18n-aria-label="nav.linkedin">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+
+      <div class="lang-toggle" role="group" aria-label="Taalkeuze" data-i18n-aria-label="nav.langAria">
         <button type="button" data-lang="nl" class="lang-btn active" aria-pressed="true">NL</button>
         <button type="button" data-lang="en" class="lang-btn" aria-pressed="false">EN</button>
       </div>
-      <button type="button" class="nav-burger" id="nav-burger" aria-label="Menu openen" aria-expanded="false" aria-controls="nav-links">
+
+      <button type="button" class="nav-burger" id="nav-burger"
+              aria-label="Menu openen of sluiten" data-i18n-aria-label="nav.menuToggle"
+              aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 </header>
 
-<main>
-  <!-- ===== HOME / HERO ===== -->
-  <section id="home" class="hero">
+<main id="main">
+
+  <!-- ===================================================================
+       HERO
+       =================================================================== -->
+  <section id="top" class="hero" aria-labelledby="hero-title">
     <div class="container hero-inner">
-      <h1 class="hero-title">
-        Florian Ronsse<span class="accent">.</span><br>
-        <span class="hero-subtitle" data-i18n="hero.subtitle">IT-problemen los ik op waar ze zich voordoen: bij de gebruiker, in het netwerk en op locatie.</span>
-      </h1>
-      <p class="hero-lead" data-i18n="hero.lead">ICT Field Engineer bij Electro Contractors in Waregem, met een achtergrond in B2B-softwaresupport en een zelfgebouwd homelab als portfolio in uitvoering: UniFi-netwerkinfrastructuur, Proxmox-virtualisatie en Linux-servers.</p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaContact">Neem contact op</a>
-        <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="btn btn-outline">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-          <span data-i18n="hero.ctaLinkedin">Bekijk LinkedIn</span>
-        </a>
+
+      <div class="hero-copy">
+        <p class="hero-badge"><span class="hero-badge-dot" aria-hidden="true"></span><span data-i18n="hero.badge">Open voor IT-kansen</span></p>
+        <p class="hero-intro" data-i18n="hero.intro">Hallo, ik ben Florian Ronsse</p>
+        <h1 class="hero-title" id="hero-title" data-i18n="hero.title">IT Support &amp; Field Technology Professional</h1>
+        <p class="hero-lead" data-i18n="hero.lead">Ik combineer meer dan drie jaar professionele B2B-supportervaring met hands-on technische ervaring en een zelfgebouwd homelab met UniFi, Proxmox, Linux en Docker.</p>
+        <p class="hero-focus" data-i18n="hero.focus">Mijn focus ligt op IT-support, netwerkondersteuning, systeembeheer en technische operations.</p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">Bekijk mijn projecten</a>
+
+          <!-- TODO cv-knop: plaats het cv als assets/cv-florian-ronsse.pdf en verwijder
+               daarna de HTML-comment hieronder. De vertaling (hero.ctaCv) staat al klaar
+               in js/i18n.js, dus de knop werkt meteen in beide talen.
+          <a href="assets/cv-florian-ronsse.pdf" class="btn btn-outline" download>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3 1.4 1.42L12 17.4l-5.7-5.7 1.4-1.4 3.3 3.3V4a1 1 0 0 1 1-1zM5 19h14v2H5v-2z"/></svg>
+            <span data-i18n="hero.ctaCv">Download mijn cv</span>
+          </a>
+          -->
+
+          <a href="https://github.com/Th3Flo99" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+            <span data-i18n="hero.ctaGithub">GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            <span data-i18n="hero.ctaLinkedin">LinkedIn</span>
+          </a>
+        </div>
       </div>
-      <ul class="hero-points">
-        <li data-i18n="hero.point1">3+ jaar professionele IT-supportervaring in een B2B-omgeving</li>
-        <li data-i18n="hero.point2">Eigen homelab op bedrijfsniveau: UniFi, Proxmox, Docker en Tailscale</li>
-        <li data-i18n="hero.point3">Sterk in probleemanalyse, pattern recognition en heldere communicatie</li>
+
+      <!-- Visueel element: infrastructuurkaart in HTML/CSS, geen externe afbeelding.
+           Wil je hier later een profielfoto tonen? Plaats assets/florian-ronsse.jpg en
+           vervang dit hele <div class="hero-visual"> blok door:
+           <div class="hero-visual"><img class="hero-photo" src="assets/florian-ronsse.jpg"
+                alt="Florian Ronsse" width="480" height="600"></div> -->
+      <div class="hero-visual">
+        <div class="infra-card">
+          <div class="infra-card-head">
+            <p class="infra-card-title" data-i18n="visual.title">Mijn homelab in het kort</p>
+            <p class="infra-card-sub" data-i18n="visual.subtitle">Zelf ontworpen, gebouwd en beheerd</p>
+          </div>
+
+          <div class="netmap" role="img"
+               aria-label="Schematische weergave van een thuisnetwerk: internet naar een cloud gateway, die opgedeeld is in drie VLAN's met daaronder access points en apparaten."
+               data-i18n-aria-label="visual.aria">
+            <div class="netmap-node netmap-internet">
+              <span class="netmap-label" data-i18n="diagram.internet">Internet</span>
+            </div>
+            <div class="netmap-link" aria-hidden="true"></div>
+            <div class="netmap-node netmap-gateway">
+              <span class="netmap-label" data-i18n="diagram.gateway">Cloud Gateway</span>
+              <span class="netmap-sub" data-i18n="diagram.gatewayRole">Router en firewall</span>
+            </div>
+            <div class="netmap-link" aria-hidden="true"></div>
+            <ul class="netmap-vlans">
+              <li class="netmap-vlan netmap-vlan-main">
+                <span class="netmap-label" data-i18n="diagram.vlanDefault">Hoofdnetwerk</span>
+                <span class="netmap-sub" data-i18n="diagram.vlanDefaultDesc">Werkstations en servers</span>
+              </li>
+              <li class="netmap-vlan netmap-vlan-guest">
+                <span class="netmap-label" data-i18n="diagram.vlanGuest">Gastnetwerk</span>
+                <span class="netmap-sub" data-i18n="diagram.vlanGuestDesc">Bezoekers, afgeschermd</span>
+              </li>
+              <li class="netmap-vlan netmap-vlan-iot">
+                <span class="netmap-label" data-i18n="diagram.vlanIot">IoT-netwerk</span>
+                <span class="netmap-sub" data-i18n="diagram.vlanIotDesc">Slimme apparaten, geïsoleerd</span>
+              </li>
+            </ul>
+            <div class="netmap-link" aria-hidden="true"></div>
+            <div class="netmap-node netmap-ap">
+              <span class="netmap-label" data-i18n="diagram.accessPoints">Access points</span>
+              <span class="netmap-sub" data-i18n="diagram.accessPointsDesc">Wi-Fi 6 en Wi-Fi 7-dekking</span>
+            </div>
+          </div>
+
+          <ul class="infra-stack">
+            <li><span class="infra-stack-label" data-i18n="visual.stackNetwork">Netwerk</span><span class="infra-stack-value">UniFi</span></li>
+            <li><span class="infra-stack-label" data-i18n="visual.stackVirtualisation">Virtualisatie</span><span class="infra-stack-value">Proxmox</span></li>
+            <li><span class="infra-stack-label" data-i18n="visual.stackContainers">Containers</span><span class="infra-stack-value">Docker</span></li>
+            <li><span class="infra-stack-label" data-i18n="visual.stackRemote">Remote toegang</span><span class="infra-stack-value">Tailscale</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       VERTROUWENSBALK
+       =================================================================== -->
+  <div class="trustbar">
+    <div class="container">
+      <ul class="trustbar-list">
+        <li data-i18n="trust.item1">3+ jaar professionele B2B IT-support</li>
+        <li data-i18n="trust.item2">UniFi-netwerk en VLAN-ervaring</li>
+        <li data-i18n="trust.item3">Linux, Proxmox en Docker homelab</li>
+        <li data-i18n="trust.item4">Nederlands en Engels</li>
+        <li data-i18n="trust.item5">Regio Oudenaarde, België</li>
+        <li data-i18n="trust.item6">Rijbewijs B</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       OVER MIJ
+       =================================================================== -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container">
+      <h2 class="section-title" id="about-title"><span class="section-number" aria-hidden="true">01</span> <span data-i18n="about.title">Over mij</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">Ik ben Florian Ronsse, ICT Field Engineer bij Electro Contractors. Drie jaar B2B-softwaresupport bij Cyncly leerde me technische problemen gestructureerd te analyseren: symptomen isoleren, logs en foutmeldingen lezen, en helder terugkoppelen aan zowel technische als niet-technische gebruikers.</p>
+          <p data-i18n="about.p2">Wat ik professioneel wil kunnen, bouw ik eerst zelf. Mijn homelab draait op UniFi met VLAN-segmentatie, een Proxmox-hypervisor en een Linux-server met Docker. Zo bouw ik gericht praktijkervaring op richting netwerkondersteuning en systeembeheer.</p>
+        </div>
+
+        <aside class="about-facts reveal" aria-labelledby="about-facts-title">
+          <h3 id="about-facts-title" data-i18n="about.factsTitle">In het kort</h3>
+          <dl class="facts-list">
+            <div class="facts-row">
+              <dt data-i18n="about.fact1Label">Locatie</dt>
+              <dd data-i18n="about.fact1">Oudenaarde, België</dd>
+            </div>
+            <div class="facts-row">
+              <dt data-i18n="about.fact2Label">Focus</dt>
+              <dd data-i18n="about.fact2">IT Support, Networking, System Administration</dd>
+            </div>
+            <div class="facts-row">
+              <dt data-i18n="about.fact3Label">Talen</dt>
+              <dd data-i18n="about.fact3">Nederlands en Engels</dd>
+            </div>
+            <div class="facts-row">
+              <dt data-i18n="about.fact4Label">Rijbewijs</dt>
+              <dd data-i18n="about.fact4">B</dd>
+            </div>
+            <div class="facts-row">
+              <dt data-i18n="about.fact5Label">Huidige rol</dt>
+              <dd data-i18n="about.fact5">ICT Field Engineer</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <ul class="strength-grid">
+        <li class="strength-card reveal">
+          <div class="strength-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M10.5 3a7.5 7.5 0 0 1 5.92 12.11l4.24 4.23-1.42 1.42-4.23-4.24A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11zm-.5 2h1v2.5h2.5v1H11V13h-1v-2.5H7.5v-1H10V7z"/></svg>
+          </div>
+          <h3 data-i18n="about.strength1.title">Probleemanalyse</h3>
+          <p data-i18n="about.strength1.desc">Symptomen isoleren, logs en foutmeldingen lezen en doorwerken tot de oorzaak, ook als die verder ligt dan de oorspronkelijke vraag.</p>
+        </li>
+        <li class="strength-card reveal">
+          <div class="strength-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3c4.97 0 9 3.36 9 7.5 0 4.14-4.03 7.5-9 7.5-.83 0-1.63-.09-2.39-.27L5 20.5l.93-3.4C4.13 15.74 3 13.75 3 11.5 3 7.36 7.03 3 12 3zm-3.5 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm3.5 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm3.5 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg>
+          </div>
+          <h3 data-i18n="about.strength2.title">Klantgerichte IT-support</h3>
+          <p data-i18n="about.strength2.desc">Drie jaar eerstelijnscontact met B2B-klanten: verwachtingen managen, escaleren waar nodig en technische uitleg vertalen naar begrijpelijke taal.</p>
+        </li>
+        <li class="strength-card reveal">
+          <div class="strength-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 2 4 13h6l-.5 9L20 11h-6l-.5-9z"/></svg>
+          </div>
+          <h3 data-i18n="about.strength3.title">Hands-on technisch leren</h3>
+          <p data-i18n="about.strength3.desc">Ik leer door te bouwen en te beheren. Netwerken, virtualisatie en containers maakte ik me eigen door ze thuis zelf op te zetten en draaiende te houden.</p>
+        </li>
       </ul>
     </div>
   </section>
 
-  <!-- ===== OVER MIJ ===== -->
-  <section id="about" class="section">
+  <!-- ===================================================================
+       ERVARING
+       =================================================================== -->
+  <section id="experience" class="section section-alt" aria-labelledby="experience-title">
     <div class="container">
-      <h2 class="section-title"><span class="section-number">01</span> <span data-i18n="about.title">Over mij</span></h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p data-i18n="about.p1">Ik ben Florian, ICT Field Engineer bij Electro Contractors in Waregem. Via een opleiding elektriciteit en verwarmingstechnieken, IT-ondersteuning bij het Wit-Gele Kruis en drie jaar als Support Agent bij Cyncly groeide ik door naar het werkveld, precies waar techniek en klantcontact samenkomen.</p>
-          <p data-i18n="about.p2">Mijn homelab is mijn portfolio in uitvoering: een zelfontworpen thuisinfrastructuur met UniFi-netwerkapparatuur, VLAN-segmentatie, een Proxmox-hypervisor en een Linux-server die 24/7 draait. Elke technologie die ik professioneel wil inzetten, leer ik eerst door ze thuis zelf te bouwen en te beheren.</p>
-          <p data-i18n="about.p3">Ik werk het best in een omgeving met technische diepgang en eigenaarschap: zelfstandig problemen analyseren, oplossingen documenteren en helder communiceren, ook met mensen zonder technische achtergrond. Ik blijf me verder verdiepen in netwerk-engineering en systeembeheer, met mijn homelab als oefenterrein.</p>
-        </div>
-        <aside class="about-facts">
-          <h3 data-i18n="about.factsTitle">In het kort</h3>
-          <ul>
-            <li><strong data-i18n="about.fact1Label">Focus:</strong> <span data-i18n="about.fact1">Systeembeheer, networking, IT support</span></li>
-            <li><strong data-i18n="about.fact2Label">Huidige rol:</strong> <span data-i18n="about.fact2">ICT Field Engineer bij Electro Contractors (Waregem)</span></li>
-            <li><strong data-i18n="about.fact3Label">Regio:</strong> <span data-i18n="about.fact3">Oudenaarde, België (rijbewijs B)</span></li>
-            <li><strong data-i18n="about.fact4Label">Talen:</strong> <span data-i18n="about.fact4">Nederlands (moedertaal), Engels</span></li>
-          </ul>
-        </aside>
+      <h2 class="section-title" id="experience-title"><span class="section-number" aria-hidden="true">02</span> <span data-i18n="experience.title">Ervaring</span></h2>
+      <p class="section-intro" data-i18n="experience.intro">Van installatietechniek en logistiek naar B2B-softwaresupport en on-site technische ondersteuning.</p>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <p class="timeline-period" data-i18n="experience.xp1.period">2026 tot heden</p>
+          <div class="timeline-body">
+            <h3 class="timeline-role" data-i18n="experience.xp1.role">ICT Field Engineer</h3>
+            <p class="timeline-org" data-i18n="experience.xp1.org">Electro Contractors</p>
+            <p class="timeline-desc" data-i18n="experience.xp1.desc">On-site technische ondersteuning, installatie en troubleshooting in klantomgevingen. De functie combineert klantcontact, praktische installatiewerkzaamheden, bekabeling, hardware en technische configuraties, met een groeiende focus op IT, netwerkondersteuning en systeemintegratie.</p>
+            <ul class="tag-list">
+              <li data-i18n="experience.xp1.tag1">On-site support</li>
+              <li data-i18n="experience.xp1.tag2">Installatie en bekabeling</li>
+              <li data-i18n="experience.xp1.tag3">Hardware</li>
+              <li data-i18n="experience.xp1.tag4">Klantcontact</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <p class="timeline-period" data-i18n="experience.xp2.period">Nov 2022 tot 2026</p>
+          <div class="timeline-body">
+            <h3 class="timeline-role" data-i18n="experience.xp2.role">Support Agent</h3>
+            <p class="timeline-org" data-i18n="experience.xp2.org">Cyncly (voorheen Compusoft)</p>
+            <p class="timeline-desc" data-i18n="experience.xp2.desc">Eerstelijns aanspreekpunt voor technische issues in B2B-klantomgevingen. Diagnose van uiteenlopende softwareproblemen, analyse van logs en foutmeldingen, en samenwerking met het ontwikkelingsteam bij escalaties. Supportcases werden gedocumenteerd in het ticketingsysteem.</p>
+            <ul class="tag-list">
+              <li data-i18n="experience.xp2.tag1">B2B support</li>
+              <li data-i18n="experience.xp2.tag2">Ticketing en escalatie</li>
+              <li data-i18n="experience.xp2.tag3">Loganalyse</li>
+              <li data-i18n="experience.xp2.tag4">Root cause analysis</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <p class="timeline-period" data-i18n="experience.xp3.period">2019 tot 2022</p>
+          <div class="timeline-body">
+            <h3 class="timeline-role" data-i18n="experience.xp3.role">Logistiek medewerker en IT-ondersteuning</h3>
+            <p class="timeline-org" data-i18n="experience.xp3.org">Wit-Gele Kruis Oost-Vlaanderen</p>
+            <p class="timeline-desc" data-i18n="experience.xp3.desc">Uitrol en configuratie van tablets voor verpleegkundigen en koppeling in het centrale systeem. Beheer van de hardwarevoorraad: defecte toestellen analyseren en werkende onderdelen hergebruiken.</p>
+            <ul class="tag-list">
+              <li data-i18n="experience.xp3.tag1">Device deployment</li>
+              <li data-i18n="experience.xp3.tag2">Configuratie</li>
+              <li data-i18n="experience.xp3.tag3">Hardwarebeheer</li>
+              <li data-i18n="experience.xp3.tag4">Voorraadbeheer</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <p class="timeline-period" data-i18n="experience.xp4.period">2019</p>
+          <div class="timeline-body">
+            <h3 class="timeline-role" data-i18n="experience.xp4.role">Stage installatietechniek</h3>
+            <p class="timeline-org" data-i18n="experience.xp4.org">Vanaudenaerde, Oudenaarde</p>
+            <p class="timeline-desc" data-i18n="experience.xp4.desc">Installatie van verwarmingsinstallaties, zonnepanelen en elektrische voorzieningen. De basis van mijn hands-on ervaring met werken op locatie.</p>
+            <ul class="tag-list">
+              <li data-i18n="experience.xp4.tag1">Elektrische installaties</li>
+              <li data-i18n="experience.xp4.tag2">Verwarmingstechniek</li>
+              <li data-i18n="experience.xp4.tag3">Zonnepanelen</li>
+              <li data-i18n="experience.xp4.tag4">Werken op locatie</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PROJECTEN
+       =================================================================== -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="container">
+      <h2 class="section-title" id="projects-title"><span class="section-number" aria-hidden="true">03</span> <span data-i18n="projects.title">Projecten</span></h2>
+      <p class="section-intro" data-i18n="projects.intro">Mijn homelab is mijn portfolio in uitvoering: zelf ontworpen, gebouwd en beheerd. Elk project is beschreven zoals in het werkveld, met situatie, aanpak, resultaat en wat ik eruit meenam.</p>
+
+      <div class="project-list">
+
+        <!-- Project 1: UniFi -->
+        <article class="project reveal" aria-labelledby="project-1-title">
+          <div class="project-main">
+            <header class="project-head">
+              <h3 id="project-1-title" data-i18n="projects.p1.title">UniFi-netwerk met VLAN-segmentatie</h3>
+              <p class="project-summary" data-i18n="projects.p1.summary">Een thuisnetwerk opnieuw opgebouwd rond UniFi, met aparte VLAN's voor het hoofdnetwerk, gasten en IoT-apparaten.</p>
+              <h4 class="visually-hidden" data-i18n="projects.techLabel">Gebruikte technologieën</h4>
+              <ul class="tag-list">
+                <li>UniFi Cloud Gateway</li>
+                <li>UniFi access points</li>
+                <li>VLAN</li>
+                <li>Firewall</li>
+                <li>DNS</li>
+                <li>DHCP</li>
+                <li>Wi-Fi 6</li>
+                <li>Wi-Fi 7</li>
+              </ul>
+            </header>
+
+            <dl class="project-detail">
+              <div>
+                <dt data-i18n="projects.labelSituation">Situatie</dt>
+                <dd data-i18n="projects.p1.situation">Een standaard thuisnetwerk volstond niet meer: slimme apparaten, gasten en mijn eigen servers zaten samen op één netwerk, zonder overzicht of controle.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelApproach">Aanpak</dt>
+                <dd data-i18n="projects.p1.approach">Het netwerk opgebouwd rond een UniFi Cloud Gateway als centrale router en firewall, met drie access points voor volledige Wi-Fi 6- en Wi-Fi 7-dekking. Het netwerk opgedeeld in drie VLAN's, hoofdnetwerk, gasten en IoT, met firewallregels die het verkeer tussen die zones beperken. DNS en DHCP, monitoring en firmwarebeheer lopen centraal via de UniFi Controller.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelResult">Resultaat</dt>
+                <dd data-i18n="projects.p1.result">Een netwerk waarin IoT-apparaten en gasten afgeschermd zijn van het hoofdnetwerk, en waarin ik vanuit één interface zie wat er draait, updates uitrol en firewallregels beheer.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelLearned">Wat ik ervan leerde</dt>
+                <dd data-i18n="projects.p1.learned">Hoe segmentatie, firewallregels en DNS/DHCP in de praktijk samenhangen, en waarom een netwerk pas echt beheersbaar wordt als je het opdeelt en centraal kan monitoren.</dd>
+              </div>
+            </dl>
+
+            <!-- TODO projectlink: staat er later documentatie op GitHub, plaats hier
+                 <a class="btn btn-outline btn-small" href="..." target="_blank" rel="noopener">Documentatie op GitHub</a> -->
+          </div>
+
+          <div class="project-aside">
+            <figure class="project-diagram">
+              <figcaption class="project-media-label" data-i18n="projects.p1.diagramTitle">Opbouw van het netwerk</figcaption>
+              <div class="netmap netmap-wide" role="img"
+                   aria-label="Schematische weergave van een thuisnetwerk: internet naar een cloud gateway, die opgedeeld is in drie VLAN's met daaronder access points en apparaten."
+                   data-i18n-aria-label="visual.aria">
+                <div class="netmap-node netmap-internet">
+                  <span class="netmap-label" data-i18n="diagram.internet">Internet</span>
+                </div>
+                <div class="netmap-link" aria-hidden="true"></div>
+                <div class="netmap-node netmap-gateway">
+                  <span class="netmap-label" data-i18n="diagram.gateway">Cloud Gateway</span>
+                  <span class="netmap-sub" data-i18n="diagram.gatewayRole">Router en firewall</span>
+                </div>
+                <div class="netmap-link" aria-hidden="true"></div>
+                <ul class="netmap-vlans">
+                  <li class="netmap-vlan netmap-vlan-main">
+                    <span class="netmap-label" data-i18n="diagram.vlanDefault">Hoofdnetwerk</span>
+                    <span class="netmap-sub" data-i18n="diagram.vlanDefaultDesc">Werkstations en servers</span>
+                  </li>
+                  <li class="netmap-vlan netmap-vlan-guest">
+                    <span class="netmap-label" data-i18n="diagram.vlanGuest">Gastnetwerk</span>
+                    <span class="netmap-sub" data-i18n="diagram.vlanGuestDesc">Bezoekers, afgeschermd</span>
+                  </li>
+                  <li class="netmap-vlan netmap-vlan-iot">
+                    <span class="netmap-label" data-i18n="diagram.vlanIot">IoT-netwerk</span>
+                    <span class="netmap-sub" data-i18n="diagram.vlanIotDesc">Slimme apparaten, geïsoleerd</span>
+                  </li>
+                </ul>
+                <div class="netmap-link" aria-hidden="true"></div>
+                <div class="netmap-node netmap-ap">
+                  <span class="netmap-label" data-i18n="diagram.accessPoints">Access points</span>
+                  <span class="netmap-sub" data-i18n="diagram.accessPointsDesc">Wi-Fi 6 en Wi-Fi 7-dekking</span>
+                </div>
+              </div>
+              <p class="project-diagram-note" data-i18n="diagram.caption">Vereenvoudigde weergave. Er worden bewust geen adressen of apparaatgegevens getoond.</p>
+            </figure>
+
+            <!-- Screenshot-placeholder. Plaats het bestand als assets/unifi-dashboard.png
+                 (aanbevolen 1200x750 px) en vervang de <div class="media-placeholder"> door:
+                 <img src="assets/unifi-dashboard.png" alt="..." width="1200" height="750" loading="lazy" decoding="async">
+                 Controleer eerst of er geen IP-adressen, hostnames of MAC-adressen zichtbaar zijn. -->
+            <figure class="project-media">
+              <div class="media-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v12h14V6H5zm2 8 3-3 2 2 3-4 4 5H7z"/></svg>
+              </div>
+              <figcaption class="project-media-label" data-i18n="projects.p1.mediaLabel">Screenshot: UniFi-dashboard</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Project 2: Proxmox -->
+        <article class="project reveal" aria-labelledby="project-2-title">
+          <div class="project-main">
+            <header class="project-head">
+              <h3 id="project-2-title" data-i18n="projects.p2.title">Proxmox- en Linux-homeserver</h3>
+              <p class="project-summary" data-i18n="projects.p2.summary">Een Proxmox-hypervisor als testlab, naast een Linux-server die dagelijkse diensten draait in Docker-containers.</p>
+              <h4 class="visually-hidden" data-i18n="projects.techLabel">Gebruikte technologieën</h4>
+              <ul class="tag-list">
+                <li>Proxmox VE</li>
+                <li>Linux</li>
+                <li>Docker</li>
+                <li>Docker Compose</li>
+                <li>Jellyfin</li>
+                <li>Virtual machines</li>
+              </ul>
+            </header>
+
+            <dl class="project-detail">
+              <div>
+                <dt data-i18n="projects.labelSituation">Situatie</dt>
+                <dd data-i18n="projects.p2.situation">Ik wilde Linux-distributies en serverdiensten kunnen testen zonder telkens fysieke hardware te herinstalleren, én een server die betrouwbaar genoeg is voor dagelijks gebruik.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelApproach">Aanpak</dt>
+                <dd data-i18n="projects.p2.approach">Een Proxmox-hypervisor opgezet voor het beheren van virtuele machines en het testen van meerdere Linux-distributies in een gecontroleerde labomgeving. Daarnaast een Linux-homeserver ingericht die 24/7 draait, met een Jellyfin-mediaserver en meerdere diensten in Docker-containers, beheerd via Docker Compose.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelResult">Resultaat</dt>
+                <dd data-i18n="projects.p2.result">Een stabiele labomgeving om in te experimenteren én een server waar dagelijks op gerekend wordt, met praktijkervaring in virtualisatie, containerbeheer en Linux-serveronderhoud.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelLearned">Wat ik ervan leerde</dt>
+                <dd data-i18n="projects.p2.learned">Virtualisatie en containers beheren in de praktijk: images en volumes, updates uitrollen zonder de diensten te breken, en problemen oplossen op een server die effectief in gebruik is.</dd>
+              </div>
+            </dl>
+
+            <!-- TODO projectlink: staat er later documentatie op GitHub, plaats hier
+                 <a class="btn btn-outline btn-small" href="..." target="_blank" rel="noopener">Documentatie op GitHub</a> -->
+          </div>
+
+          <div class="project-aside">
+            <!-- Screenshot-placeholder: assets/proxmox-dashboard.png (aanbevolen 1200x750 px).
+                 Vervang de <div class="media-placeholder"> door een <img ... loading="lazy" decoding="async">.
+                 Blur of knip node-namen, IP-adressen en gebruikersnamen weg voor je uploadt. -->
+            <figure class="project-media">
+              <div class="media-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v12h14V6H5zm2 8 3-3 2 2 3-4 4 5H7z"/></svg>
+              </div>
+              <figcaption class="project-media-label" data-i18n="projects.p2.mediaLabel">Screenshot: Proxmox-dashboard</figcaption>
+            </figure>
+
+            <!-- Foto-placeholder: assets/homelab.jpg (aanbevolen 1200x750 px).
+                 Vervang de <div class="media-placeholder"> door een <img ... loading="lazy" decoding="async">. -->
+            <figure class="project-media">
+              <div class="media-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 2.5v2h2v-2H6zm-2 8.5h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1zm2 2.5v2h2v-2H6z"/></svg>
+              </div>
+              <figcaption class="project-media-label" data-i18n="projects.p2.mediaLabel2">Foto: homelab-opstelling</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Project 3: Remote access -->
+        <article class="project reveal" aria-labelledby="project-3-title">
+          <div class="project-main">
+            <header class="project-head">
+              <h3 id="project-3-title" data-i18n="projects.p3.title">Veilige remote toegang en domotica</h3>
+              <p class="project-summary" data-i18n="projects.p3.summary">Remote toegang tot de thuisinfrastructuur via Tailscale, zonder poorten open te zetten naar het internet.</p>
+              <h4 class="visually-hidden" data-i18n="projects.techLabel">Gebruikte technologieën</h4>
+              <ul class="tag-list">
+                <li>Tailscale</li>
+                <li>Raspberry Pi</li>
+                <li>Home Assistant</li>
+                <li>NAS</li>
+                <li>Remote access</li>
+              </ul>
+            </header>
+
+            <dl class="project-detail">
+              <div>
+                <dt data-i18n="projects.labelSituation">Situatie</dt>
+                <dd data-i18n="projects.p3.situation">Thuisdiensten zoals de NAS en Home Assistant moesten van buitenshuis bereikbaar zijn, maar poorten openzetten naar het internet wilde ik vermijden.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelApproach">Aanpak</dt>
+                <dd data-i18n="projects.p3.approach">Tailscale geconfigureerd voor versleutelde remote toegang tot de NAS en de Raspberry Pi vanaf elke locatie, in plaats van port forwarding. Op diezelfde Raspberry Pi draait Home Assistant voor domotica-automatisering.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelResult">Resultaat</dt>
+                <dd data-i18n="projects.p3.result">Toegang tot NAS en Home Assistant vanaf elke locatie over een versleutelde verbinding, met beperkte publieke blootstelling omdat er geen poorten naar het internet openstaan. Netwerk- en systeembeveiliging is mijn volgende leerdoel.</dd>
+              </div>
+              <div>
+                <dt data-i18n="projects.labelLearned">Wat ik ervan leerde</dt>
+                <dd data-i18n="projects.p3.learned">Waarom een overlay-VPN in veel gevallen een veiliger opzet is dan port forwarding, en hoe je remote toegang praktisch houdt zonder de deur wijd open te zetten.</dd>
+              </div>
+            </dl>
+
+            <!-- TODO projectlink: staat er later documentatie op GitHub, plaats hier
+                 <a class="btn btn-outline btn-small" href="..." target="_blank" rel="noopener">Documentatie op GitHub</a> -->
+          </div>
+
+          <div class="project-aside">
+            <!-- Screenshot-placeholder: assets/home-assistant.png (aanbevolen 1200x750 px).
+                 Vervang de <div class="media-placeholder"> door een <img ... loading="lazy" decoding="async">.
+                 Verwijder eerst apparaatnamen die je adres of locatie prijsgeven. -->
+            <figure class="project-media">
+              <div class="media-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 3 10.5V21h6v-6h6v6h6V10.5L12 3z"/></svg>
+              </div>
+              <figcaption class="project-media-label" data-i18n="projects.p3.mediaLabel">Screenshot: Home Assistant</figcaption>
+            </figure>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== VAARDIGHEDEN ===== -->
-  <section id="skills" class="section section-alt">
+  <!-- ===================================================================
+       VAARDIGHEDEN
+       =================================================================== -->
+  <section id="skills" class="section section-alt" aria-labelledby="skills-title">
     <div class="container">
-      <h2 class="section-title"><span class="section-number">02</span> <span data-i18n="skills.title">Vaardigheden</span></h2>
-      <p class="section-intro" data-i18n="skills.intro">Een realistisch overzicht van waar ik vandaag mee werk, opgebouwd in mijn job en mijn homelab.</p>
+      <h2 class="section-title" id="skills-title"><span class="section-number" aria-hidden="true">04</span> <span data-i18n="skills.title">Vaardigheden</span></h2>
+      <p class="section-intro" data-i18n="skills.intro">Een realistisch overzicht van waar ik vandaag mee werk, opgebouwd in mijn job en in mijn homelab.</p>
+
       <div class="skills-grid">
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-6v2h3v2H7v-2h3v-2H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v8h14V6H5z"/></svg>
-          </div>
+        <article class="skill-card reveal">
           <h3 data-i18n="skills.support.title">IT Support</h3>
-          <p data-i18n="skills.support.desc">Dagelijkse praktijk: problemen diagnosticeren in klantomgevingen, escaleren waar nodig en helder terugkoppelen aan de klant.</p>
-          <ul class="skill-tags">
-            <li>Windows &amp; macOS</li><li>Linux (server &amp; desktop)</li><li data-i18n="skills.support.tag3">Ticketing &amp; escalatie</li><li data-i18n="skills.support.tag4">Log-analyse</li><li data-i18n="skills.support.tag5">Hardwarebeheer</li><li>B2B support</li>
+          <p data-i18n="skills.support.desc">Gebruikers en klantomgevingen ondersteunen: problemen diagnosticeren, escaleren waar nodig en helder terugkoppelen.</p>
+          <ul class="tag-list">
+            <li>Windows</li>
+            <li>macOS</li>
+            <li data-i18n="skills.support.tag3">Linux desktop en server</li>
+            <li data-i18n="skills.support.tag4">B2B support</li>
+            <li data-i18n="skills.support.tag5">Ticketing</li>
+            <li data-i18n="skills.support.tag6">Escalatie</li>
+            <li data-i18n="skills.support.tag7">Loganalyse</li>
+            <li data-i18n="skills.support.tag8">Hardware troubleshooting</li>
           </ul>
         </article>
 
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M11 2h2v6h4a1 1 0 0 1 1 1v3h3v2h-3v1a1 1 0 0 1-1 1h-4v6h-2v-6H7a1 1 0 0 1-1-1v-1H3v-2h3V9a1 1 0 0 1 1-1h4V2zM8 10v4h8v-4H8z"/></svg>
-          </div>
+        <article class="skill-card reveal">
           <h3 data-i18n="skills.network.title">Networking</h3>
-          <p data-i18n="skills.network.desc">Netwerken ontwerpen, segmenteren en beheren, thuis opgebouwd op bedrijfsniveau met UniFi-apparatuur.</p>
-          <ul class="skill-tags">
-            <li>UniFi (Cloud Gateway, APs)</li><li data-i18n="skills.network.tag2">VLAN-segmentatie</li><li>Wi-Fi 6 / Wi-Fi 7</li><li data-i18n="skills.network.tag4">Routing &amp; firewall</li><li>Tailscale VPN</li><li>DNS &amp; DHCP</li>
+          <p data-i18n="skills.network.desc">Netwerken opzetten, segmenteren en beheren, in de praktijk opgebouwd met UniFi-apparatuur.</p>
+          <ul class="tag-list">
+            <li>UniFi</li>
+            <li data-i18n="skills.network.tag2">VLAN-segmentatie</li>
+            <li>DNS</li>
+            <li>DHCP</li>
+            <li data-i18n="skills.network.tag5">Routing</li>
+            <li data-i18n="skills.network.tag6">Firewallbasis</li>
+            <li>Wi-Fi 6 &amp; Wi-Fi 7</li>
+            <li>Tailscale</li>
           </ul>
         </article>
 
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v1.06a8 8 0 0 1 6.94 6.94H21a1 1 0 1 1 0 2h-1.06a8 8 0 0 1-6.94 6.94V21a1 1 0 1 1-2 0v-1.06A8 8 0 0 1 4.06 13H3a1 1 0 1 1 0-2h1.06A8 8 0 0 1 11 4.06V3a1 1 0 0 1 1-1zm0 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
-          </div>
-          <h3 data-i18n="skills.troubleshoot.title">Troubleshooting</h3>
-          <p data-i18n="skills.troubleshoot.desc">Gestructureerd fouten zoeken: symptomen isoleren, patronen herkennen en de kern van het probleem vinden, vaak verder dan de oorspronkelijke vraag.</p>
-          <ul class="skill-tags">
-            <li>Root cause analysis</li><li data-i18n="skills.troubleshoot.tag2">Log- &amp; foutanalyse</li><li>Pattern recognition</li><li>SQL</li><li>Git</li><li data-i18n="skills.troubleshoot.tag6">Python (in ontwikkeling)</li>
+        <article class="skill-card reveal">
+          <h3 data-i18n="skills.systems.title">Systems &amp; Infrastructure</h3>
+          <p data-i18n="skills.systems.desc">Servers, virtualisatie en containers: opzetten, draaiende houden en onderhouden.</p>
+          <ul class="tag-list">
+            <li>Proxmox</li>
+            <li>Linux server</li>
+            <li>Docker</li>
+            <li>Docker Compose</li>
+            <li>NAS</li>
+            <li>Raspberry Pi</li>
+            <li>Home Assistant</li>
           </ul>
         </article>
 
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M14.7 3.3a5 5 0 0 1 5.9 6.9l-3.5-3.5-2.8 2.8 3.5 3.5a5 5 0 0 1-6.9-5.9L4.4 13.6a2 2 0 1 0 2.8 2.8l3.1-3.1 1.4 1.4-3.1 3.1a4 4 0 1 1-5.7-5.7l6.8-6.8z"/></svg>
-          </div>
-          <h3 data-i18n="skills.field.title">Field Work</h3>
-          <p data-i18n="skills.field.desc">Hands-on werken op locatie: installaties, hardware-uitrol en klantcontact, met een achtergrond in installatietechniek en elektriciteit.</p>
-          <ul class="skill-tags">
-            <li data-i18n="skills.field.tag1">On-site installatie</li><li data-i18n="skills.field.tag2">Hardware-uitrol</li><li data-i18n="skills.field.tag3">Elektrische installaties</li><li data-i18n="skills.field.tag4">Klantcommunicatie</li><li data-i18n="skills.field.tag5">Documentatie</li><li data-i18n="skills.field.tag6">Rijbewijs B</li>
+        <article class="skill-card reveal">
+          <h3 data-i18n="skills.tools.title">Tools &amp; Learning</h3>
+          <p data-i18n="skills.tools.desc">Wat ik gebruik om werk vast te leggen en waar ik me momenteel verder in verdiep.</p>
+          <ul class="tag-list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>SQL</li>
+            <li data-i18n="skills.tools.tag4">Python (in ontwikkeling)</li>
+            <li data-i18n="skills.tools.tag5">Technische documentatie</li>
+            <li data-i18n="skills.tools.tag6">Root cause analysis</li>
           </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== ERVARING & PROJECTEN ===== -->
-  <section id="projects" class="section">
+  <!-- ===================================================================
+       ROUNDFAIR
+       =================================================================== -->
+  <section id="roundfair" class="section" aria-labelledby="roundfair-title">
     <div class="container">
-      <h2 class="section-title"><span class="section-number">03</span> <span data-i18n="projects.title">Ervaring &amp; projecten</span></h2>
+      <h2 class="section-title" id="roundfair-title"><span class="section-number" aria-hidden="true">05</span> Roundfair</h2>
+      <p class="section-intro" data-i18n="roundfair.intro">Naast mijn werk en mijn homelab bouw ik aan een eigen iOS-app.</p>
 
-      <h3 class="subsection-title" data-i18n="projects.xpTitle">Werkervaring</h3>
-      <div class="xp-timeline">
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp1.period">2026 tot heden</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp1.title">ICT Field Engineer bij Electro Contractors (Waregem)</h4>
-            <p data-i18n="projects.xp1.desc">On-site installatie, configuratie en onderhoud van IT- en netwerkinfrastructuur bij klanten: van bekabeling en hardware tot netwerkapparatuur en troubleshooting op locatie.</p>
-          </div>
-        </article>
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp2.period">Nov 2022 tot 2026</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp2.title">Support Agent bij Cyncly (voorheen Compusoft)</h4>
-            <p data-i18n="projects.xp2.desc">Eerstelijns aanspreekpunt voor technische issues in B2B-klantomgevingen. Diagnose van uiteenlopende softwareproblemen, analyse van logs en foutmeldingen, en samenwerking met het ontwikkelingsteam bij escalaties. Supportcases gedocumenteerd in het ticketingsysteem.</p>
-          </div>
-        </article>
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp3.period">2019 tot 2022</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp3.title">Logistiek medewerker / IT-ondersteuning bij Wit-Gele Kruis Oost-Vlaanderen</h4>
-            <p data-i18n="projects.xp3.desc">Uitrol en configuratie van tablets voor verpleegkundigen en koppeling in het centrale systeem. Beheer van de hardware-voorraad: defecte toestellen analyseren en werkende onderdelen hergebruiken.</p>
-          </div>
-        </article>
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp4.period">2019</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp4.title">Stage installatietechniek bij Vanaudenaerde (Oudenaarde)</h4>
-            <p data-i18n="projects.xp4.desc">Installatie van verwarmingsinstallaties, zonnepanelen en elektrische voorzieningen, de basis van mijn hands-on ervaring met werken op locatie.</p>
-          </div>
-        </article>
-      </div>
-
-      <h3 class="subsection-title" data-i18n="projects.labTitle">Homelab &amp; eigen projecten</h3>
-      <p class="section-intro" data-i18n="projects.intro">Zelfstandig ontworpen, gebouwd en beheerd: mijn portfolio in uitvoering. Telkens beschreven zoals in het werkveld: situatie, aanpak en resultaat.</p>
-
-      <div class="projects-list">
-        <article class="project-card">
-          <header>
-            <h3 data-i18n="projects.p1.title">UniFi-netwerkinfrastructuur met VLAN-segmentatie</h3>
-            <ul class="skill-tags"><li>UniFi Cloud Gateway</li><li>VLAN</li><li>Wi-Fi 6/7</li><li>Firewall</li></ul>
-          </header>
-          <dl>
-            <div><dt data-i18n="projects.labelSituation">Situatie</dt><dd data-i18n="projects.p1.situation">Een standaard thuisnetwerk volstond niet meer: slimme apparaten, gasten en eigen servers zaten samen op één netwerk, zonder overzicht of controle.</dd></div>
-            <div><dt data-i18n="projects.labelApproach">Aanpak</dt><dd data-i18n="projects.p1.approach">Volledige netwerkinfrastructuur opgebouwd rond een UniFi Cloud Gateway als centrale router en firewall, met drie access points (2× UniFi Express 6, 1× U7 Pro) voor volledige Wi-Fi 6/7-dekking. Het netwerk gesegmenteerd in drie VLAN's (Default, Guest en IoT) en centraal beheerd via de UniFi Controller.</dd></div>
-            <div><dt data-i18n="projects.labelResult">Resultaat</dt><dd data-i18n="projects.p1.result">Een professioneel beheerd netwerk waarin IoT-apparaten en gasten geïsoleerd zijn van het hoofdnetwerk, met monitoring, firmware-updates en firewallbeheer vanuit één interface.</dd></div>
-          </dl>
-        </article>
-
-        <article class="project-card">
-          <header>
-            <h3 data-i18n="projects.p2.title">Proxmox-virtualisatie en Linux-homeserver</h3>
-            <ul class="skill-tags"><li>Proxmox VE</li><li>Linux</li><li>Docker Compose</li><li>Jellyfin</li></ul>
-          </header>
-          <dl>
-            <div><dt data-i18n="projects.labelSituation">Situatie</dt><dd data-i18n="projects.p2.situation">Ik wilde Linux-distributies en serverdiensten kunnen testen zonder telkens fysieke hardware te herinstalleren, én een server die betrouwbaar genoeg is voor dagelijks gebruik.</dd></div>
-            <div><dt data-i18n="projects.labelApproach">Aanpak</dt><dd data-i18n="projects.p2.approach">Proxmox-hypervisor opgezet voor VM-beheer en het testen van meerdere Linux-distributies in een gecontroleerde labomgeving. Daarnaast een Linux-homeserver ingericht als 24/7 omgeving: Jellyfin-mediaserver en meerdere diensten in Docker-containers, beheerd via Docker Compose.</dd></div>
-            <div><dt data-i18n="projects.labelResult">Resultaat</dt><dd data-i18n="projects.p2.result">Een stabiele labomgeving om te experimenteren én een server die dagelijks in productie draait, met praktijkervaring in virtualisatie, containerbeheer en Linux-serveronderhoud.</dd></div>
-          </dl>
-        </article>
-
-        <article class="project-card">
-          <header>
-            <h3 data-i18n="projects.p3.title">Remote toegang, security en domotica</h3>
-            <ul class="skill-tags"><li>Tailscale VPN</li><li>Raspberry Pi</li><li>Home Assistant</li><li>NAS</li></ul>
-          </header>
-          <dl>
-            <div><dt data-i18n="projects.labelSituation">Situatie</dt><dd data-i18n="projects.p3.situation">Thuisdiensten zoals de NAS en Home Assistant moesten veilig bereikbaar zijn van buitenshuis, zonder poorten open te zetten naar het internet.</dd></div>
-            <div><dt data-i18n="projects.labelApproach">Aanpak</dt><dd data-i18n="projects.p3.approach">Tailscale VPN geconfigureerd voor versleutelde remote toegang tot de NAS en Raspberry Pi vanaf elke locatie. Daarnaast Home Assistant opgezet op een Raspberry Pi voor domotica-automatisering.</dd></div>
-            <div><dt data-i18n="projects.labelResult">Resultaat</dt><dd data-i18n="projects.p3.result">Veilige toegang tot de volledige thuisinfrastructuur zonder blootgestelde poorten. Netwerk- en systeembeveiliging is mijn volgende leerdoel, daar verdiep ik me nu actief in.</dd></div>
-          </dl>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ROUNDFAIR ===== -->
-  <section id="roundfair" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title"><span class="section-number">04</span> Roundfair</h2>
-      <p class="section-intro" data-i18n="roundfair.intro">Naast mijn werk en homelab bouw ik aan een eigen iOS-app.</p>
-      <div class="app-card">
-        <img class="app-logo" src="assets/roundfair-logo.png" alt="Roundfair-logo" width="96" height="96">
+      <div class="app-card reveal">
+        <img class="app-logo" src="assets/roundfair-logo.png" alt="Logo van de Roundfair-app"
+             data-i18n-alt="roundfair.logoAlt" width="96" height="96" loading="lazy" decoding="async">
         <div class="app-body">
-          <p class="app-tagline" data-i18n="roundfair.tagline">Eigen project (iOS-app)</p>
+          <p class="app-tagline" data-i18n="roundfair.tagline">Eigen iOS-project, in ontwikkeling</p>
           <h3 data-i18n="roundfair.title">Eerlijk rondjes en kosten verdelen, zonder discussie</h3>
-          <p data-i18n="roundfair.what">Roundfair houdt bij wie het laatste rondje betaalde en wie aan de beurt is, en verdeelt kosten eerlijk binnen een groep. Geen gedoe met rekensommen of eeuwige discussies: de app houdt het overzicht, zodat niemand telkens opdraait voor de rekening.</p>
-          <p data-i18n="roundfair.why">Ik bouwde Roundfair om het volledige traject van een eigen product te doorlopen: van idee en design tot ontwikkeling en publicatie. Dezelfde aanpak als mijn homelab: iets écht bouwen is de beste manier om het te leren.</p>
+          <p data-i18n="roundfair.what">Roundfair is een eigen iOS-project waarmee groepen kunnen bijhouden wie een rondje betaalde en gezamenlijke kosten eerlijk kunnen verdelen.</p>
+
+          <h4 class="app-learn-title" data-i18n="roundfair.learnTitle">Wat ik ermee leer</h4>
+          <ul class="tag-list">
+            <li data-i18n="roundfair.learn1">Productdenken</li>
+            <li data-i18n="roundfair.learn2">UX en UI</li>
+            <li data-i18n="roundfair.learn3">iOS-ontwikkeling</li>
+            <li data-i18n="roundfair.learn4">Testen</li>
+            <li data-i18n="roundfair.learn5">Publicatieproces</li>
+            <li data-i18n="roundfair.learn6">Documentatie</li>
+            <li data-i18n="roundfair.learn7">Iteratief ontwikkelen</li>
+          </ul>
+
           <div class="app-actions">
             <a href="https://roundfair.support" target="_blank" rel="noopener" class="btn btn-primary">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.93 9h-3.47a15.7 15.7 0 0 0-1.5-6.13A8.02 8.02 0 0 1 19.93 11zM12 4.04c.83 1.2 1.86 3.63 2.05 6.96h-4.1c.19-3.33 1.22-5.76 2.05-6.96zM4.07 13h3.47a15.7 15.7 0 0 0 1.5 6.13A8.02 8.02 0 0 1 4.07 13zm3.47-2H4.07a8.02 8.02 0 0 1 4.97-6.13A15.7 15.7 0 0 0 7.54 11zM12 19.96c-.83-1.2-1.86-3.63-2.05-6.96h4.1c-.19 3.33-1.22 5.76-2.05 6.96zm2.96-.83a15.7 15.7 0 0 0 1.5-6.13h3.47a8.02 8.02 0 0 1-4.97 6.13z"/></svg>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.93 9h-3.47a15.7 15.7 0 0 0-1.5-6.13A8.02 8.02 0 0 1 19.93 11zM12 4.04c.83 1.2 1.86 3.63 2.05 6.96h-4.1c.19-3.33 1.22-5.76 2.05-6.96zM4.07 13h3.47a15.7 15.7 0 0 0 1.5 6.13A8.02 8.02 0 0 1 4.07 13zm3.47-2H4.07a8.02 8.02 0 0 1 4.97-6.13A15.7 15.7 0 0 0 7.54 11zM12 19.96c-.83-1.2-1.86-3.63-2.05-6.96h4.1c-.19 3.33-1.22 5.76-2.05 6.96zm2.96-.83a15.7 15.7 0 0 0 1.5-6.13h3.47a8.02 8.02 0 0 1-4.97 6.13z"/></svg>
               <span data-i18n="roundfair.cta">Bekijk roundfair.support</span>
             </a>
             <p class="app-soon" data-i18n="roundfair.soon">Binnenkort beschikbaar in de App Store</p>
@@ -276,53 +706,93 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section">
+  <!-- ===================================================================
+       CONTACT
+       =================================================================== -->
+  <section id="contact" class="section section-alt" aria-labelledby="contact-title">
     <div class="container">
-      <h2 class="section-title"><span class="section-number">05</span> <span data-i18n="contact.title">Contact</span></h2>
+      <h2 class="section-title" id="contact-title"><span class="section-number" aria-hidden="true">06</span> <span data-i18n="contact.title">Contact</span></h2>
+
       <div class="contact-grid">
-        <div class="contact-info">
-          <h3 data-i18n="contact.pitchTitle">Connecteren of een technische vraag?</h3>
-          <p data-i18n="contact.pitch">Wil je connecteren, heb je een vraag over mijn ervaring of een interessant voorstel? Stuur een bericht via het formulier of connecteer via LinkedIn, ik antwoord snel.</p>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="btn btn-primary">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-              <span data-i18n="contact.linkedinBtn">Bekijk mijn LinkedIn</span>
-            </a>
-          </div>
+        <div class="contact-info reveal">
+          <h3 data-i18n="contact.pitchTitle">Laten we kennismaken</h3>
+          <p data-i18n="contact.pitch">Heb je een vraag over mijn ervaring, mijn projecten of een passende IT-kans? Neem gerust contact op via LinkedIn of het formulier.</p>
+
+          <h4 class="contact-links-title" data-i18n="contact.linksTitle">Waar je me vindt</h4>
+          <ul class="contact-links">
+            <li>
+              <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="contact-link">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                <span data-i18n="contact.linkedinBtn">Connecteer op LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Th3Flo99" target="_blank" rel="noopener" class="contact-link">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+                <span data-i18n="contact.githubBtn">Bekijk mijn GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://roundfair.support" target="_blank" rel="noopener" class="contact-link">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.93 9h-3.47a15.7 15.7 0 0 0-1.5-6.13A8.02 8.02 0 0 1 19.93 11zM12 4.04c.83 1.2 1.86 3.63 2.05 6.96h-4.1c.19-3.33 1.22-5.76 2.05-6.96zM4.07 13h3.47a15.7 15.7 0 0 0 1.5 6.13A8.02 8.02 0 0 1 4.07 13zm3.47-2H4.07a8.02 8.02 0 0 1 4.97-6.13A15.7 15.7 0 0 0 7.54 11zM12 19.96c-.83-1.2-1.86-3.63-2.05-6.96h4.1c-.19 3.33-1.22 5.76-2.05 6.96zm2.96-.83a15.7 15.7 0 0 0 1.5-6.13h3.47a8.02 8.02 0 0 1-4.97 6.13z"/></svg>
+                <span data-i18n="contact.roundfairBtn">Bekijk Roundfair</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xnjkwpjv" method="POST">
+        <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/xnjkwpjv" method="POST" novalidate>
           <div class="form-field">
             <label for="name" data-i18n="contact.form.name">Naam</label>
-            <input type="text" id="name" name="name" required autocomplete="name" data-i18n-placeholder="contact.form.namePh" placeholder="Uw naam">
+            <input type="text" id="name" name="name" required autocomplete="name"
+                   aria-describedby="name-error"
+                   data-i18n-placeholder="contact.form.namePh" placeholder="Uw naam">
+            <p class="field-error" id="name-error"></p>
           </div>
+
           <div class="form-field">
             <label for="email" data-i18n="contact.form.email">E-mailadres</label>
-            <input type="email" id="email" name="email" required autocomplete="email" data-i18n-placeholder="contact.form.emailPh" placeholder="naam@bedrijf.be">
+            <input type="email" id="email" name="email" required autocomplete="email"
+                   aria-describedby="email-error"
+                   data-i18n-placeholder="contact.form.emailPh" placeholder="naam@bedrijf.be">
+            <p class="field-error" id="email-error"></p>
           </div>
+
           <div class="form-field">
             <label for="message" data-i18n="contact.form.message">Bericht</label>
-            <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.form.messagePh" placeholder="Waarmee kan ik u helpen?"></textarea>
+            <textarea id="message" name="message" rows="5" required
+                      aria-describedby="message-error"
+                      data-i18n-placeholder="contact.form.messagePh" placeholder="Waarmee kan ik u helpen?"></textarea>
+            <p class="field-error" id="message-error"></p>
           </div>
+
+          <!-- Honeypot: onzichtbaar voor mensen, ingevuld door de meeste spambots.
+               Formspree filtert inzendingen met een ingevuld _gotcha-veld automatisch weg. -->
+          <div class="form-gotcha" aria-hidden="true">
+            <label for="company-website">Laat dit veld leeg</label>
+            <input type="text" id="company-website" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
           <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.form.submit">Verstuur bericht</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© <span id="year">2026</span> Florian Ronsse, <span data-i18n="footer.tagline">ICT Field Engineer</span></p>
-    <ul class="footer-links">
+    <p class="footer-note">© <span id="year">2026</span> Florian Ronsse, <span data-i18n="footer.tagline">IT Support &amp; Field Technology</span></p>
+    <ul class="footer-links" aria-label="Footerlinks" data-i18n-aria-label="footer.linksAria">
       <li><a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/Th3Flo99" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="https://roundfair.support" target="_blank" rel="noopener">Roundfair</a></li>
+      <li><a href="#top" data-i18n="footer.backToTop">Terug naar boven</a></li>
     </ul>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
