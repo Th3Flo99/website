@@ -990,3 +990,57 @@ h1 > span {
     transition: none !important;
   }
 }
+
+/* Compact evidence within the existing experience and featured project. */
+.xp-details {
+  color: var(--color-ink-soft);
+  max-width: 760px;
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+.xp-details li + li {
+  margin-top: 0.65rem;
+}
+.why-commercial {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 2rem;
+  padding: 2rem 1.5rem 0;
+}
+.why-commercial h3 {
+  font-size: 1.25rem;
+}
+.why-commercial p {
+  color: var(--color-ink-soft);
+}
+.why-commercial p + p {
+  margin-top: 0.8rem;
+}
+.product-proof {
+  border-top: 1px solid var(--color-border);
+  margin-block: 1.5rem 1rem;
+  padding-top: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+.product-proof dt {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+.product-proof dd {
+  color: var(--color-ink-soft);
+  font-size: 0.9375rem;
+}
+@media (max-width: 900px) {
+  .why-commercial {
+    grid-template-columns: 160px minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .why-commercial {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-inline: 1rem;
+  }
+}

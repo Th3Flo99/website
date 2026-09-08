@@ -13,7 +13,7 @@ const translations = {
     "hero.title1": "Technische basis.",
     "hero.title2": "Commerciële ambitie.",
     "hero.lead":
-      "Met ongeveer vier jaar ervaring in softwaresupport begrijp ik hoe belangrijk het is om klanten te begrijpen en oplossingen helder uit te leggen. Die basis wil ik inzetten in B2B sales, accountmanagement en commerciële technologie.",
+      "Ongeveer vier jaar B2B softwaresupport heeft mij geleerd zakelijke klanten te begrijpen, gericht door te vragen en complexe software helder uit te leggen. Die klantgerichte ervaring en technische basis vormen mijn vertrekpunt voor een volgende stap in B2B sales, accountmanagement en commerciële technologie.",
     "hero.experience": "Bekijk mijn ervaring",
     "hero.linkedin": "Connecteer op LinkedIn",
     "hero.contact": "Laten we kennismaken",
@@ -24,29 +24,29 @@ const translations = {
     "hero.technicalDesc": "Producten begrijpen door zelf te bouwen.",
     "hero.business": "Commercieel gedreven",
     "hero.businessDesc": "Groeien in business en klantrelaties.",
-    "hero.focus": "Interesse in",
+    "hero.focus": "Mijn volgende stap",
     "about.title": "Technologie begrijpen. Mensen verder helpen.",
     "about.p1":
-      "Ik ben Florian. Tijdens mijn werk in B2B softwaresupport leerde ik vragen stellen, de echte behoefte achter een probleem begrijpen en complexe informatie vertalen naar een duidelijke volgende stap. Het klantcontact is voor mij een belangrijk deel van dat werk.",
+      "Ik ben Florian. In softwaresupport werkte ik met zakelijke gebruikers die duidelijkheid nodig hadden: wat loopt er mis, wat is er nodig en hoe kunnen ze verder? Ik leerde hun situatie onderzoeken en productkennis vertalen naar uitleg waar ze mee aan de slag konden.",
     "about.p2":
-      "Nu wil ik voortbouwen op die ervaring in een rol met meer commerciële verantwoordelijkheid. Ik ben nieuwsgierig naar hoe bedrijven groeien, hoe klanten keuzes maken en hoe je een passende oplossing verbindt aan hun doelen.",
+      "Dat werk vraagt meer dan technische kennis. Goed luisteren, verwachtingen afstemmen en vragen blijven opvolgen zijn essentieel om vertrouwen op te bouwen. Juist die combinatie van klanten begrijpen en oplossingen uitleggen neem ik mee naar een commerciële functie.",
     "about.p3":
-      "Technologie blijft mijn sterke basis. Met eigen projecten blijf ik leren, problemen oplossen en verantwoordelijkheid nemen van eerste idee tot werkende oplossing. Ik zoek een professionele omgeving waar ik kan bijdragen, feedback krijg en verder kan groeien.",
+      "Met Roundfair en mijn technische projecten neem ik ook zelf initiatief. Ik onderzoek een behoefte, maak keuzes en werk aan een bruikbare oplossing. Zo blijf ik leren over technologie, producten en de mensen die ze gebruiken.",
     "about.locationLabel": "Regio",
     "about.location": "Oudenaarde, België",
     "about.languagesLabel": "Talen",
     "about.languages": "Nederlands (moedertaal), Engels",
     "experience.title": "Ervaring met klanten als vertrekpunt.",
     "experience.intro":
-      "Mijn volgende stap bouwt voort op echte ervaring in support, probleemoplossing en werken met gebruikers.",
+      "Mijn basis: professioneel klantcontact, software begrijpelijk maken en verantwoordelijkheid nemen voor de opvolging van vragen.",
     "xp.0.period": "2026 tot heden",
     "xp.0.title": "ICT Field Engineer",
     "xp.0.desc":
-      "Mijn huidige functie in een technische werkomgeving op locatie. Deze stap bouwt voort op mijn praktische achtergrond en ervaring met het analyseren van problemen.",
+      "Ervaring opdoen in een technische werkomgeving op locatie, met aandacht voor praktisch werken en het stapsgewijs analyseren van problemen.",
     "xp.1.period": "Nov 2022 tot 2026",
     "xp.1.title": "Support Agent",
     "xp.1.desc":
-      "Aanspreekpunt voor zakelijke gebruikers met vragen over software. Klantproblemen analyseren, productkennis vertalen naar begrijpelijke uitleg en supportvragen documenteren en opvolgen. Bij escalaties samenwerken met het ontwikkelingsteam.",
+      "Aanspreekpunt voor zakelijke klanten met softwarevragen. Doorvragen over hun werkwijze en het probleem om te begrijpen wat zij nodig hadden om verder te kunnen.",
     "xp.customer": "Klantcommunicatie",
     "xp.product": "Productkennis",
     "xp.ownership": "Opvolging & ownership",
@@ -60,25 +60,25 @@ const translations = {
       "Praktijkervaring met verwarmingsinstallaties, zonnepanelen en elektrische voorzieningen. De start van mijn technische achtergrond en mijn interesse in hoe systemen werken.",
     "skills.title": "Wat ik meebreng naar een commerciële rol.",
     "skills.intro":
-      "Overdraagbare vaardigheden uit klantcontact en technische support, aangevuld met de ambitie om het commerciële vak te leren.",
+      "Vaardigheden die ik in softwaresupport toepaste en in eigen projecten verder ontwikkel. Ze vormen een concrete basis om het commerciële vak te leren.",
     "skill.0.title": "Klantcommunicatie",
     "skill.0.desc":
-      "Luisteren, doorvragen en uitleg afstemmen op de persoon tegenover mij.",
+      "Professioneel communiceren met zakelijke gebruikers: luisteren, gerichte vragen stellen en uitleg afstemmen op hun technische kennis.",
     "skill.1.title": "Behoeften ontdekken",
     "skill.1.desc":
-      "Verder kijken dan de eerste vraag om te begrijpen waar iemand werkelijk mee geholpen is.",
-    "skill.2.title": "Oplossingen uitleggen",
+      "De werkwijze en context achter een softwarevraag onderzoeken, zodat een oplossing aansluit op wat de klant nodig heeft.",
+    "skill.2.title": "Productkennis & heldere oplossingen",
     "skill.2.desc":
-      "Technische informatie vertalen naar begrijpelijke keuzes en praktische vervolgstappen.",
+      "Productkennis gebruiken om ingewikkelde software begrijpelijk te maken en de klant door praktische vervolgstappen te begeleiden.",
     "skill.3.title": "Verantwoordelijkheid nemen",
     "skill.3.desc":
-      "Vragen opvolgen, prioriteiten stellen en samenwerken wanneer een probleem extra expertise vraagt.",
+      "Vragen documenteren en opvolgen, prioriteiten bewaken en bij escalaties de juiste informatie delen met andere teams.",
     "skill.4.title": "Relaties opbouwen",
     "skill.4.desc":
-      "Met aandacht, duidelijke verwachtingen en betrouwbare opvolging werken aan vertrouwen.",
+      "Vertrouwen opbouwen door aandachtig te luisteren, verwachtingen duidelijk te maken en klanten op de hoogte te houden.",
     "skill.5.title": "Commerciële nieuwsgierigheid",
     "skill.5.desc":
-      "Willen begrijpen hoe een product waarde biedt, waarom klanten kiezen en hoe bedrijven groeien.",
+      "Bij Roundfair onderzoeken voor wie een oplossing nuttig is en welke productkeuzes waarde bieden. Zelf blijven leren door te bouwen en te verbeteren.",
     "technical.label": "Technische basis",
     "technical.title": "Een product beter begrijpen begint bij de techniek.",
     "technical.desc":
@@ -88,44 +88,44 @@ const translations = {
     "technical.scripting": "Scripting (basis)",
     "projects.title": "Nieuwsgierigheid die iets oplevert.",
     "projects.intro":
-      "Persoonlijke projecten laten zien hoe ik leer: een behoefte herkennen, zelf aan de slag gaan en blijven verbeteren.",
-    "roundfair.label": "Eigen iOS project",
+      "Roundfair brengt mijn interesse in gebruikers, producten en technologie samen. Mijn homelab ondersteunt dat met praktische zelfstudie en probleemoplossing.",
+    "roundfair.label": "Eigen product, iOS app",
     "roundfair.title": "Van een alledaags probleem naar een eigen product.",
     "roundfair.what":
-      "Met Roundfair werk ik aan een app om rondjes en gedeelde kosten binnen een groep eerlijk bij te houden. Het vertrekpunt is een herkenbare behoefte: duidelijkheid over wie wat heeft betaald.",
+      "Roundfair vertrekt van een dagelijks probleem: in een groep is het niet altijd duidelijk wie het laatste rondje betaalde of hoe gedeelde kosten verdeeld zijn. Ik bouw een iOS app die dat overzicht eenvoudiger maakt, zodat gebruikers minder hoeven te rekenen en overleggen.",
     "roundfair.why":
-      "Het project geeft mij de kans om productkeuzes, gebruiksgemak en techniek samen te brengen. Ik leer door zelf verantwoordelijkheid te nemen voor het idee, het ontwerp en de ontwikkeling.",
+      "Ik neem verantwoordelijkheid voor het hele product, van probleem en concept tot merk, ontwerp en ontwikkeling. Naast de code denk ik na over wie de app gebruikt, waarom die nuttig is en welke keuzes de ervaring begrijpelijk houden.",
     "roundfair.cta": "Ontdek Roundfair",
     "project.0.title": "Netwerken begrijpen door ze te bouwen",
     "project.0.desc":
-      "Een UniFi thuisnetwerk met gescheiden VLANs voor eigen apparaten, gasten en IoT. Een oefening in behoeften vertalen naar een structuur en zelf het beheer opnemen.",
+      "Een UniFi thuisnetwerk met aparte VLANs voor eigen apparaten, gasten en IoT. Zelf behoeften vertalen naar een opzet en het beheer opnemen.",
     "project.1.title": "Een eigen omgeving om te blijven leren",
     "project.1.desc":
-      "Met Proxmox, Linux en Docker test ik systemen en diensten in mijn homelab. Ik onderzoek problemen, probeer oplossingen uit en bouw mijn technische inzicht stap voor stap op.",
+      "Proxmox, Linux en Docker als leeromgeving. Systemen testen, fouten onderzoeken en oplossingen uitproberen om mijn technische inzicht te verdiepen.",
     "project.2.title": "Toegang en automatisering eenvoudiger maken",
     "project.2.desc":
-      "Tailscale voor toegang op afstand en Home Assistant op een Raspberry Pi. Kleine praktische projecten die mij leren oplossingen vanuit dagelijks gebruik te bekijken.",
+      "Toegang op afstand met Tailscale en automatisering met Home Assistant. Praktische oplossingen bouwen vanuit dagelijks gebruik.",
     "direction.title": "Waar ik naartoe wil.",
     "direction.lead": "Op het kruispunt van technologie, klanten en business.",
     "direction.desc":
-      "Ik wil mijn technische en klantgerichte ervaring inzetten in een commerciële functie, met ruimte om salesvaardigheden te ontwikkelen en door te groeien in verantwoordelijkheid. Een sterk, professioneel en liefst internationaal bedrijf spreekt mij aan.",
+      "Mijn volgende stap ligt in een commerciële rol waarin klantcommunicatie en productkennis samenkomen. De focus: B2B sales en accountmanagement, business development of FinTech en commerciële technologie.",
     "direction.entry":
-      "Ik sta open voor instapmogelijkheden in business development, technology sales en customer success met commerciële verantwoordelijkheid. Accountmanagement en bredere commerciële verantwoordelijkheid zijn richtingen waarin ik wil groeien.",
+      "Ik zoek een passende instap met ruimte om salesvaardigheden te ontwikkelen en door te groeien in klantverantwoordelijkheid. Customer success past wanneer er duidelijke commerciële verantwoordelijkheid bij hoort.",
     "direction.0.title": "B2B sales & accountmanagement",
     "direction.0.desc":
-      "Klantbehoeften verbinden aan passende oplossingen en duurzame relaties.",
-    "direction.1.title": "Business development & technology",
+      "Klantbehoeften begrijpen, productwaarde uitleggen en verantwoordelijkheid voor relaties opbouwen.",
+    "direction.1.title": "Business development",
     "direction.1.desc":
-      "Nieuwe kansen ontdekken en de waarde van technische producten leren overbrengen.",
-    "direction.2.title": "FinTech & financiële dienstverlening",
+      "Nieuwe klantgesprekken openen, behoeften verkennen en passende zakelijke kansen leren herkennen.",
+    "direction.2.title": "FinTech & commerciële technologie",
     "direction.2.desc":
-      "Interesse in commerciële functies waar mijn achtergrond een realistische instap biedt.",
+      "Technische producten begrijpelijk maken voor zakelijke klanten, ook binnen financiële technologie.",
     "business.label": "Wat mij bezighoudt",
     "business.desc":
-      "Bedrijven, finance, markten en businessmodellen: ik wil begrijpen hoe organisaties waarde creëren, geld verdienen en hun commerciële strategie bepalen. Die interesse motiveert mijn volgende loopbaanstap.",
+      "Financiële markten, bedrijven en businessmodellen boeien mij: hoe ontstaat waarde, waarom kiezen klanten een product en hoe verdient een bedrijf eraan? Die persoonlijke interesse in commerciële strategie vult mijn professionele achtergrond in softwaresupport aan.",
     "contact.title": "Laten we kennismaken.",
     "contact.pitch":
-      "Zoek je iemand die technische kennis en klantgerichte ervaring meebrengt, met de ambitie om commercieel te groeien? Ik maak graag kennis over een passende rol of een interessant gesprek.",
+      "Zoek je iemand met ervaring met zakelijke klanten, productkennis en technisch inzicht? Ik maak graag kennis over een passende volgende stap in B2B sales, accountmanagement, business development of FinTech.",
     "contact.linkedin": "Connecteer op LinkedIn",
     "form.namePlaceholder": "Uw naam",
     "form.name": "Naam",
@@ -145,9 +145,31 @@ const translations = {
     "form.error":
       "Versturen is niet gelukt. Je bericht blijft staan. Probeer opnieuw of neem contact op via LinkedIn.",
     "meta.title":
-      "Florian Ronsse | Technologie, Business & Commerciële Ambitie",
+      "Florian Ronsse | Van B2B support naar sales & accountmanagement",
     "meta.description":
-      "Florian Ronsse combineert ongeveer vier jaar softwaresupport met technische nieuwsgierigheid en ambitie in B2B sales, accountmanagement, business development en FinTech.",
+      "Florian Ronsse: vier jaar B2B softwaresupport en heldere klantcommunicatie als basis voor een volgende stap in sales, accountmanagement, business development en FinTech.",
+    "xp.1.explain":
+      "Productkennis inzetten om complexe software begrijpelijk uit te leggen en klanten door een passende oplossing te begeleiden.",
+    "xp.1.followup":
+      "Supportvragen documenteren, prioriteiten beheren en de opvolging opnemen. Helder communiceren over vervolgstappen om verwachtingen af te stemmen en vertrouwen op te bouwen.",
+    "xp.1.collaborate":
+      "Bij escalaties samenwerken met het ontwikkelingsteam en de klantvraag en technische bevindingen duidelijk overbrengen.",
+    "why.title": "Waarom commerciële functies",
+    "why.customer":
+      "In support merkte ik dat niet alleen de techniek mij boeit, maar ook het gesprek: begrijpen wat een klant nodig heeft, uitleggen waarom een oplossing werkt en zorgen dat iemand tevreden verder kan.",
+    "why.next":
+      "Een commerciële functie is een bewuste volgende stap: voortbouwen op die ervaring, met meer verantwoordelijkheid voor klanten, relaties, business en commerciële resultaten.",
+    "roundfair.usersLabel": "Gebruikersbehoefte",
+    "roundfair.users":
+      "Duidelijkheid over wie wat heeft betaald, zonder ingewikkelde berekeningen.",
+    "roundfair.productLabel": "Product & merk",
+    "roundfair.product":
+      "Functies, naam, visuele identiteit en gebruikservaring verbinden aan hetzelfde probleem.",
+    "roundfair.ownershipLabel": "Initiatief & ownership",
+    "roundfair.ownership":
+      "Zelf keuzes maken en leren door een idee uit te werken tot een bruikbaar product.",
+    "schema.description":
+      "Florian Ronsse heeft ongeveer vier jaar ervaring in B2B softwaresupport en klantcommunicatie. Hij bouwt Roundfair en richt zijn volgende loopbaanstap op commerciële technologie, sales en accountmanagement.",
   },
   en: {
     skip: "Skip to content",
@@ -162,7 +184,7 @@ const translations = {
     "hero.title1": "Technical background.",
     "hero.title2": "Commercial ambition.",
     "hero.lead":
-      "With around four years in software support, I understand the value of listening to customers and making solutions clear. I’m looking to bring that foundation to B2B sales, account management and commercial technology.",
+      "Around four years in B2B software support taught me to understand business customers, ask focused questions and explain complex software clearly. That customer experience and technical foundation underpin my next step into B2B sales, account management and commercial technology.",
     "hero.experience": "View my experience",
     "hero.linkedin": "Connect on LinkedIn",
     "hero.contact": "Get in touch",
@@ -173,29 +195,29 @@ const translations = {
     "hero.technicalDesc": "Understanding products by building things myself.",
     "hero.business": "Commercial ambition",
     "hero.businessDesc": "Growing into business and customer relationships.",
-    "hero.focus": "Interested in",
+    "hero.focus": "My next step",
     "about.title": "Understand technology. Help people move forward.",
     "about.p1":
-      "I’m Florian. Working in B2B software support taught me to ask questions, understand the need behind a problem and turn complex information into a clear next step. The customer relationship is an important part of that work for me.",
+      "I’m Florian. In software support, I worked with business users who needed clarity: what is going wrong, what do they need and how can they move forward? I learned to investigate their situation and turn product knowledge into guidance they could use.",
     "about.p2":
-      "Now I want to build on that experience in a role with more commercial responsibility. I’m curious about how businesses grow, how customers make decisions and how to connect the right solution to their goals.",
+      "That work takes more than technical knowledge. Listening carefully, aligning expectations and following through on questions are essential to building trust. Understanding customers and explaining solutions are the strengths I bring to a commercial role.",
     "about.p3":
-      "Technology remains a strong foundation. My personal projects keep me learning, solving problems and taking ownership from the first idea to a working solution. I’m looking for a professional environment where I can contribute, receive feedback and grow.",
+      "With Roundfair and my technical projects, I also take initiative myself. I investigate a need, make decisions and work towards a useful solution. It keeps me learning about technology, products and the people who use them.",
     "about.locationLabel": "Based in",
     "about.location": "Oudenaarde, Belgium",
     "about.languagesLabel": "Languages",
     "about.languages": "Dutch (native), English",
     "experience.title": "Experience built around customers.",
     "experience.intro":
-      "My next step builds on real experience in support, problem solving and working with users.",
+      "My foundation: professional customer communication, making software understandable and taking responsibility for following up on questions.",
     "xp.0.period": "2026 to present",
     "xp.0.title": "ICT Field Engineer",
     "xp.0.desc":
-      "My current role in a technical environment on site. This step builds on my practical background and experience in analysing problems.",
+      "Gaining experience in a technical environment on site, with a focus on practical work and analysing problems step by step.",
     "xp.1.period": "Nov 2022 to 2026",
     "xp.1.title": "Support Agent",
     "xp.1.desc":
-      "A point of contact for business users with software questions. Analysing customer problems, turning product knowledge into understandable guidance, and documenting and following up on support cases. Working with the development team on escalations.",
+      "A point of contact for business customers with software questions. Asking about their workflow and the problem to understand what they needed to move forward.",
     "xp.customer": "Customer communication",
     "xp.product": "Product knowledge",
     "xp.ownership": "Follow through & ownership",
@@ -209,25 +231,25 @@ const translations = {
       "Practical experience with heating systems, solar panels and electrical installations. The starting point for my technical background and interest in how systems work.",
     "skills.title": "What I bring to a commercial role.",
     "skills.intro":
-      "Transferable skills from customer contact and technical support, with the ambition to learn the commercial side of the business.",
+      "Skills I applied in software support and continue to develop through personal projects. They provide a practical foundation for learning the commercial side of the business.",
     "skill.0.title": "Customer communication",
     "skill.0.desc":
-      "Listening, asking questions and adapting my explanation to the person in front of me.",
-    "skill.1.title": "Problem discovery",
+      "Communicating professionally with business users: listening, asking focused questions and adapting explanations to their technical knowledge.",
+    "skill.1.title": "Needs discovery",
     "skill.1.desc":
-      "Looking beyond the first question to understand what would actually help someone.",
-    "skill.2.title": "Making solutions clear",
+      "Exploring the workflow and context behind a software question so the solution fits what the customer needs.",
+    "skill.2.title": "Product understanding & clear solutions",
     "skill.2.desc":
-      "Turning technical information into understandable choices and practical next steps.",
+      "Using product knowledge to make complex software understandable and guide customers through practical next steps.",
     "skill.3.title": "Taking ownership",
     "skill.3.desc":
-      "Following up on questions, setting priorities and collaborating when a problem needs more expertise.",
+      "Documenting and following up on questions, managing priorities and sharing the right information with other teams during escalations.",
     "skill.4.title": "Building relationships",
     "skill.4.desc":
-      "Building trust through attention, clear expectations and reliable follow through.",
+      "Building trust by listening carefully, setting clear expectations and keeping customers informed.",
     "skill.5.title": "Commercial curiosity",
     "skill.5.desc":
-      "Wanting to understand how a product creates value, why customers choose it and how businesses grow.",
+      "Using Roundfair to explore who benefits from a solution and which product choices create value. Continuing to learn by building and improving.",
     "technical.label": "Technical foundation",
     "technical.title": "Understanding a product starts with its technology.",
     "technical.desc":
@@ -237,44 +259,44 @@ const translations = {
     "technical.scripting": "Basic scripting",
     "projects.title": "Curiosity put into practice.",
     "projects.intro":
-      "Personal projects show how I learn: recognise a need, take initiative and keep improving.",
-    "roundfair.label": "Personal iOS project",
+      "Roundfair brings together my interest in users, products and technology. My homelab supports that with practical learning and problem solving.",
+    "roundfair.label": "Independent product, iOS app",
     "roundfair.title": "From an everyday problem to a product of my own.",
     "roundfair.what":
-      "With Roundfair, I’m working on an app to keep track of rounds and shared costs fairly within a group. It starts with a familiar need: clarity about who has paid for what.",
+      "Roundfair starts with an everyday problem: groups can lose track of who paid for the last round or how shared costs are divided. I’m building an iOS app to make that clearer, so users have less to calculate and discuss.",
     "roundfair.why":
-      "The project gives me a way to bring product decisions, ease of use and technology together. I learn by taking responsibility for the idea, design and development myself.",
+      "I take ownership of the whole product, from the problem and concept to branding, design and development. Alongside the code, I consider who uses the app, why it is useful and which decisions keep the experience clear.",
     "roundfair.cta": "Explore Roundfair",
     "project.0.title": "Understanding networks by building them",
     "project.0.desc":
-      "A UniFi home network with separate VLANs for personal devices, guests and IoT. Practice in turning needs into a structure and taking responsibility for maintaining it.",
+      "A UniFi home network with separate VLANs for personal devices, guests and IoT. Translating needs into a setup and taking ownership of its maintenance.",
     "project.1.title": "A space to keep learning",
     "project.1.desc":
-      "Using Proxmox, Linux and Docker, I test systems and services in my homelab. I investigate problems, try solutions and build my technical understanding step by step.",
+      "Proxmox, Linux and Docker as a learning environment. Testing systems, investigating faults and trying solutions to deepen my technical understanding.",
     "project.2.title": "Making access and automation simpler",
     "project.2.desc":
-      "Tailscale for remote access and Home Assistant on a Raspberry Pi. Practical projects that teach me to look at solutions through everyday use.",
+      "Remote access with Tailscale and automation with Home Assistant. Building practical solutions around everyday use.",
     "direction.title": "Where I’m going.",
     "direction.lead": "Where technology, customers and business meet.",
     "direction.desc":
-      "I want to build on my technical and customer facing experience in a commercial role, with room to develop sales skills and grow in responsibility. I’m drawn to strong, professional and preferably international businesses.",
+      "My next step is a commercial role where customer communication and product understanding come together. My focus: B2B sales and account management, business development, or FinTech and commercial technology.",
     "direction.entry":
-      "I’m open to entry opportunities in business development, technology sales and customer success with commercial responsibility. Account management and broader commercial ownership are directions I want to grow into.",
+      "I’m looking for a suitable entry point with room to develop sales skills and grow in customer responsibility. Customer success is relevant where it includes clear commercial responsibility.",
     "direction.0.title": "B2B sales & account management",
     "direction.0.desc":
-      "Connecting customer needs with suitable solutions and lasting relationships.",
-    "direction.1.title": "Business development & technology",
+      "Understanding customer needs, explaining product value and growing into responsibility for relationships.",
+    "direction.1.title": "Business development",
     "direction.1.desc":
-      "Discovering opportunities and learning to communicate the value of technical products.",
-    "direction.2.title": "FinTech & financial services",
+      "Starting new customer conversations, exploring needs and learning to identify relevant business opportunities.",
+    "direction.2.title": "FinTech & commercial technology",
     "direction.2.desc":
-      "An interest in commercial roles where my background offers a realistic entry point.",
+      "Making technical products understandable for business customers, including in financial technology.",
     "business.label": "What I’m curious about",
     "business.desc":
-      "Businesses, finance, markets and business models: I want to understand how organisations create value, earn revenue and shape their commercial strategy. That interest is part of what motivates my next career step.",
+      "Financial markets, businesses and business models interest me: how is value created, why do customers choose a product and how does a business earn from it? This personal interest in commercial strategy complements my professional background in software support.",
     "contact.title": "Let’s start a conversation.",
     "contact.pitch":
-      "Looking for someone with technical knowledge, customer experience and the ambition to grow commercially? I’d welcome a conversation about a suitable opportunity.",
+      "Looking for someone with business customer experience, product knowledge and technical understanding? I’d welcome a conversation about a suitable next step in B2B sales, account management, business development or FinTech.",
     "contact.linkedin": "Connect on LinkedIn",
     "form.namePlaceholder": "Your name",
     "form.name": "Name",
@@ -293,9 +315,32 @@ const translations = {
       "Thank you for your message. I’ll get back to you as soon as possible.",
     "form.error":
       "Your message could not be sent. Your text has been kept. Please try again or reach out on LinkedIn.",
-    "meta.title": "Florian Ronsse | Technology, Business & Commercial Ambition",
+    "meta.title":
+      "Florian Ronsse | From B2B Support to Sales & Account Management",
     "meta.description":
-      "Florian Ronsse brings around four years of software support, technical curiosity and ambition in B2B sales, account management, business development and FinTech.",
+      "Florian Ronsse: four years in B2B software support and clear customer communication, building towards sales, account management, business development and FinTech.",
+    "xp.1.explain":
+      "Using product knowledge to explain complex software clearly and guide customers through an appropriate solution.",
+    "xp.1.followup":
+      "Documenting support questions, managing priorities and owning the follow up. Communicating next steps clearly to align expectations and build trust.",
+    "xp.1.collaborate":
+      "Working with the development team on escalations and clearly communicating the customer’s question and technical findings.",
+    "why.title": "Why Commercial Roles",
+    "why.customer":
+      "In support, I found that the conversation matters to me as much as the technology: understanding what a customer needs, explaining why a solution works and helping them move forward with confidence.",
+    "why.next":
+      "A commercial role is a deliberate next step: building on that experience with more responsibility for customers, relationships, business and commercial results.",
+    "roundfair.usersLabel": "User need",
+    "roundfair.users":
+      "Clarity about who paid for what, without complicated calculations.",
+    "roundfair.productLabel": "Product & brand",
+    "roundfair.product":
+      "Connecting features, name, visual identity and user experience to the same problem.",
+    "roundfair.ownershipLabel": "Initiative & ownership",
+    "roundfair.ownership":
+      "Making decisions myself and learning by developing an idea into a useful product.",
+    "schema.description":
+      "Florian Ronsse has around four years of experience in B2B software support and customer communication. He is building Roundfair and focusing his next career step on commercial technology, sales and account management.",
   },
 };
 
@@ -341,6 +386,14 @@ function setLanguage(lang) {
   });
   document.documentElement.lang = lang;
   document.title = dict["meta.title"];
+  const personNode = document.querySelector(
+    'script[type="application/ld+json"]',
+  );
+  if (personNode) {
+    const person = JSON.parse(personNode.textContent);
+    person.description = dict["schema.description"];
+    personNode.textContent = JSON.stringify(person);
+  }
   const metaValues = {
     'meta[name="description"]': dict["meta.description"],
     'meta[property="og:title"]': dict["meta.title"],
