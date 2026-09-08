@@ -1,328 +1,699 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florian Ronsse, ICT Field Engineer | IT Support &amp; Network Engineer</title>
-  <meta name="description" content="Portfolio van Florian Ronsse, ICT Field Engineer bij Electro Contractors in Waregem. Ervaring in IT support, network engineering, IT troubleshooting en system administration.">
-  <meta name="keywords" content="ICT support, network engineer, field engineer, IT troubleshooting, system administration, IT support, netwerkbeheer, systeembeheer, UniFi, Proxmox">
-  <meta name="author" content="Florian Ronsse">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Florian Ronsse, ICT Field Engineer">
-  <meta property="og:description" content="ICT Field Engineer bij Electro Contractors. IT support, network engineering en troubleshooting, hands-on en on-site.">
-  <meta property="og:locale" content="nl_BE">
-  <meta property="og:locale:alternate" content="en_US">
-
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b1f3a'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>FR</text></svg>">
-  <link rel="stylesheet" href="css/style.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Florian Ronsse",
-    "jobTitle": "ICT Field Engineer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Electro Contractors",
-      "address": { "@type": "PostalAddress", "addressLocality": "Waregem", "addressCountry": "BE" }
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Oudenaarde",
-      "addressCountry": "BE"
-    },
-    "sameAs": ["https://www.linkedin.com/in/florian-ronsse-1914231bb"],
-    "knowsAbout": ["IT Support", "Network Engineering", "IT Troubleshooting", "System Administration", "Field Engineering", "UniFi", "Proxmox", "Docker", "Linux"]
-  }
-  </script>
-</head>
-<body>
-
-<header class="site-header">
-  <nav class="nav container" aria-label="Hoofdnavigatie">
-    <a href="#home" class="nav-logo">FR<span class="accent">.</span></a>
-
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#about" data-i18n="nav.about">Over mij</a></li>
-      <li><a href="#skills" data-i18n="nav.skills">Vaardigheden</a></li>
-      <li><a href="#projects" data-i18n="nav.projects">Ervaring</a></li>
-      <li><a href="#roundfair">Roundfair</a></li>
-      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="btn btn-small btn-outline nav-linkedin">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-          LinkedIn
-        </a>
-      </li>
-    </ul>
-
-    <div class="nav-actions">
-      <div class="lang-toggle" role="group" aria-label="Taalkeuze / Language">
-        <button type="button" data-lang="nl" class="lang-btn active" aria-pressed="true">NL</button>
-        <button type="button" data-lang="en" class="lang-btn" aria-pressed="false">EN</button>
-      </div>
-      <button type="button" class="nav-burger" id="nav-burger" aria-label="Menu openen" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-</header>
-
-<main>
-  <!-- ===== HOME / HERO ===== -->
-  <section id="home" class="hero">
-    <div class="container hero-inner">
-      <h1 class="hero-title">
-        Florian Ronsse<span class="accent">.</span><br>
-        <span class="hero-subtitle" data-i18n="hero.subtitle">IT-problemen los ik op waar ze zich voordoen: bij de gebruiker, in het netwerk en op locatie.</span>
-      </h1>
-      <p class="hero-lead" data-i18n="hero.lead">ICT Field Engineer bij Electro Contractors in Waregem, met een achtergrond in B2B-softwaresupport en een zelfgebouwd homelab als portfolio in uitvoering: UniFi-netwerkinfrastructuur, Proxmox-virtualisatie en Linux-servers.</p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaContact">Neem contact op</a>
-        <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="btn btn-outline">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-          <span data-i18n="hero.ctaLinkedin">Bekijk LinkedIn</span>
-        </a>
-      </div>
-      <ul class="hero-points">
-        <li data-i18n="hero.point1">3+ jaar professionele IT-supportervaring in een B2B-omgeving</li>
-        <li data-i18n="hero.point2">Eigen homelab op bedrijfsniveau: UniFi, Proxmox, Docker en Tailscale</li>
-        <li data-i18n="hero.point3">Sterk in probleemanalyse, pattern recognition en heldere communicatie</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== OVER MIJ ===== -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="section-number">01</span> <span data-i18n="about.title">Over mij</span></h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p data-i18n="about.p1">Ik ben Florian, ICT Field Engineer bij Electro Contractors in Waregem. Via een opleiding elektriciteit en verwarmingstechnieken, IT-ondersteuning bij het Wit-Gele Kruis en drie jaar als Support Agent bij Cyncly groeide ik door naar het werkveld, precies waar techniek en klantcontact samenkomen.</p>
-          <p data-i18n="about.p2">Mijn homelab is mijn portfolio in uitvoering: een zelfontworpen thuisinfrastructuur met UniFi-netwerkapparatuur, VLAN-segmentatie, een Proxmox-hypervisor en een Linux-server die 24/7 draait. Elke technologie die ik professioneel wil inzetten, leer ik eerst door ze thuis zelf te bouwen en te beheren.</p>
-          <p data-i18n="about.p3">Ik werk het best in een omgeving met technische diepgang en eigenaarschap: zelfstandig problemen analyseren, oplossingen documenteren en helder communiceren, ook met mensen zonder technische achtergrond. Ik blijf me verder verdiepen in netwerk-engineering en systeembeheer, met mijn homelab als oefenterrein.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Florian Ronsse | Technologie, Business &amp; Commerciële Ambitie
+    </title>
+    <meta
+      name="description"
+      content="Florian Ronsse combineert ongeveer vier jaar softwaresupport met technische nieuwsgierigheid en ambitie in B2B sales, accountmanagement, business development en FinTech."
+    />
+    <meta name="author" content="Florian Ronsse" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#102d38" />
+    <link rel="canonical" href="https://florianronsse.net/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://florianronsse.net/" />
+    <meta property="og:site_name" content="Florian Ronsse" />
+    <meta
+      property="og:title"
+      content="Florian Ronsse | Technologie, Business &amp; Commerciële Ambitie"
+    />
+    <meta
+      property="og:description"
+      content="Florian Ronsse combineert ongeveer vier jaar softwaresupport met technische nieuwsgierigheid en ambitie in B2B sales, accountmanagement, business development en FinTech."
+    />
+    <meta property="og:locale" content="nl_BE" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Florian Ronsse | Technologie, Business &amp; Commerciële Ambitie"
+    />
+    <meta
+      name="twitter:description"
+      content="Florian Ronsse combineert ongeveer vier jaar softwaresupport met technische nieuwsgierigheid en ambitie in B2B sales, accountmanagement, business development en FinTech."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23102d38'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='%23b6ead5' text-anchor='middle'%3EFR%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Florian Ronsse",
+        "url": "https://florianronsse.net/",
+        "jobTitle": "ICT Field Engineer",
+        "description": "Florian Ronsse brings around four years of software support, technical curiosity and ambition in B2B sales, account management, business development and FinTech.",
+        "worksFor": { "@type": "Organization", "name": "Electro Contractors" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oudenaarde",
+          "addressCountry": "BE"
+        },
+        "sameAs": ["https://www.linkedin.com/in/florian-ronsse-1914231bb"],
+        "knowsAbout": [
+          "Software Support",
+          "Customer Communication",
+          "IT Troubleshooting",
+          "Linux",
+          "Networking",
+          "Proxmox",
+          "Docker"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a data-i18n="skip" class="skip-link" href="#main">Ga naar de inhoud</a>
+    <header class="site-header">
+      <nav
+        class="nav container"
+        aria-label="Hoofdnavigatie"
+        data-i18n-aria-label="nav.label"
+      >
+        <a href="#home" class="nav-logo" aria-label="Florian Ronsse, home"
+          >FR<span class="brand-dot">.</span
+          ><span class="brand-name">Florian Ronsse</span></a
+        >
+        <ul class="nav-links" id="nav-links">
+          <li><a data-i18n="nav.about" href="#about">Over mij</a></li>
+          <li><a data-i18n="nav.experience" href="#experience">Ervaring</a></li>
+          <li><a data-i18n="nav.skills" href="#skills">Sterktes</a></li>
+          <li><a data-i18n="nav.projects" href="#projects">Projecten</a></li>
+          <li><a data-i18n="nav.direction" href="#direction">Ambitie</a></li>
+          <li><a data-i18n="nav.contact" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div
+            class="lang-toggle"
+            role="group"
+            aria-label="Taalkeuze / Language"
+          >
+            <button
+              type="button"
+              data-lang="nl"
+              lang="nl"
+              class="lang-btn active"
+              aria-pressed="true"
+              aria-label="Nederlands"
+            >
+              NL</button
+            ><button
+              type="button"
+              data-lang="en"
+              lang="en"
+              class="lang-btn"
+              aria-pressed="false"
+              aria-label="English"
+            >
+              EN
+            </button>
+          </div>
+          <button
+            type="button"
+            class="nav-burger"
+            id="nav-burger"
+            aria-label="Menu openen"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
-        <aside class="about-facts">
-          <h3 data-i18n="about.factsTitle">In het kort</h3>
-          <ul>
-            <li><strong data-i18n="about.fact1Label">Focus:</strong> <span data-i18n="about.fact1">Systeembeheer, networking, IT support</span></li>
-            <li><strong data-i18n="about.fact2Label">Huidige rol:</strong> <span data-i18n="about.fact2">ICT Field Engineer bij Electro Contractors (Waregem)</span></li>
-            <li><strong data-i18n="about.fact3Label">Regio:</strong> <span data-i18n="about.fact3">Oudenaarde, België (rijbewijs B)</span></li>
-            <li><strong data-i18n="about.fact4Label">Talen:</strong> <span data-i18n="about.fact4">Nederlands (moedertaal), Engels</span></li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== VAARDIGHEDEN ===== -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title"><span class="section-number">02</span> <span data-i18n="skills.title">Vaardigheden</span></h2>
-      <p class="section-intro" data-i18n="skills.intro">Een realistisch overzicht van waar ik vandaag mee werk, opgebouwd in mijn job en mijn homelab.</p>
-      <div class="skills-grid">
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-6v2h3v2H7v-2h3v-2H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v8h14V6H5z"/></svg>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-topline">
+            <p>Florian Ronsse</p>
+            <p data-i18n="hero.location">Oudenaarde, België</p>
           </div>
-          <h3 data-i18n="skills.support.title">IT Support</h3>
-          <p data-i18n="skills.support.desc">Dagelijkse praktijk: problemen diagnosticeren in klantomgevingen, escaleren waar nodig en helder terugkoppelen aan de klant.</p>
-          <ul class="skill-tags">
-            <li>Windows &amp; macOS</li><li>Linux (server &amp; desktop)</li><li data-i18n="skills.support.tag3">Ticketing &amp; escalatie</li><li data-i18n="skills.support.tag4">Log-analyse</li><li data-i18n="skills.support.tag5">Hardwarebeheer</li><li>B2B support</li>
-          </ul>
-        </article>
-
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M11 2h2v6h4a1 1 0 0 1 1 1v3h3v2h-3v1a1 1 0 0 1-1 1h-4v6h-2v-6H7a1 1 0 0 1-1-1v-1H3v-2h3V9a1 1 0 0 1 1-1h4V2zM8 10v4h8v-4H8z"/></svg>
+          <div class="hero-grid">
+            <div class="hero-main">
+              <p data-i18n="hero.eyebrow" class="eyebrow">
+                Technologie. Business. Mensen.
+              </p>
+              <h1>
+                <span data-i18n="hero.title1">Technische basis.</span
+                ><span data-i18n="hero.title2" class="hero-accent"
+                  >Commerciële ambitie.</span
+                >
+              </h1>
+              <p data-i18n="hero.lead" class="hero-lead">
+                Met ongeveer vier jaar ervaring in softwaresupport begrijp ik
+                hoe belangrijk het is om klanten te begrijpen en oplossingen
+                helder uit te leggen. Die basis wil ik inzetten in B2B sales,
+                accountmanagement en commerciële technologie.
+              </p>
+              <div class="hero-cta">
+                <a
+                  data-i18n="hero.experience"
+                  href="#experience"
+                  class="btn btn-primary"
+                  >Bekijk mijn ervaring</a
+                ><a
+                  href="https://www.linkedin.com/in/florian-ronsse-1914231bb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill="currentColor"
+                      d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86-0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+                    /></svg
+                  ><span data-i18n="hero.linkedin"
+                    >Connecteer op LinkedIn</span
+                  ></a
+                >
+              </div>
+              <a
+                data-i18n="hero.contact"
+                href="#contact"
+                class="text-link hero-contact"
+                >Laten we kennismaken</a
+              >
+            </div>
+            <aside
+              class="hero-profile"
+              aria-label="Profiel in het kort"
+              data-i18n-aria-label="hero.profileLabel"
+            >
+              <p data-i18n="hero.profile" class="eyebrow">Mijn vertrekpunt</p>
+              <div class="profile-row">
+                <span class="profile-number">01</span>
+                <div>
+                  <h2 data-i18n="hero.customer">Klantgericht</h2>
+                  <p data-i18n="hero.customerDesc">
+                    Behoeften begrijpen. Oplossingen helder maken.
+                  </p>
+                </div>
+              </div>
+              <div class="profile-row">
+                <span class="profile-number">02</span>
+                <div>
+                  <h2 data-i18n="hero.technical">Technisch nieuwsgierig</h2>
+                  <p data-i18n="hero.technicalDesc">
+                    Producten begrijpen door zelf te bouwen.
+                  </p>
+                </div>
+              </div>
+              <div class="profile-row">
+                <span class="profile-number">03</span>
+                <div>
+                  <h2 data-i18n="hero.business">Commercieel gedreven</h2>
+                  <p data-i18n="hero.businessDesc">
+                    Groeien in business en klantrelaties.
+                  </p>
+                </div>
+              </div>
+            </aside>
           </div>
-          <h3 data-i18n="skills.network.title">Networking</h3>
-          <p data-i18n="skills.network.desc">Netwerken ontwerpen, segmenteren en beheren, thuis opgebouwd op bedrijfsniveau met UniFi-apparatuur.</p>
-          <ul class="skill-tags">
-            <li>UniFi (Cloud Gateway, APs)</li><li data-i18n="skills.network.tag2">VLAN-segmentatie</li><li>Wi-Fi 6 / Wi-Fi 7</li><li data-i18n="skills.network.tag4">Routing &amp; firewall</li><li>Tailscale VPN</li><li>DNS &amp; DHCP</li>
-          </ul>
-        </article>
-
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v1.06a8 8 0 0 1 6.94 6.94H21a1 1 0 1 1 0 2h-1.06a8 8 0 0 1-6.94 6.94V21a1 1 0 1 1-2 0v-1.06A8 8 0 0 1 4.06 13H3a1 1 0 1 1 0-2h1.06A8 8 0 0 1 11 4.06V3a1 1 0 0 1 1-1zm0 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
-          </div>
-          <h3 data-i18n="skills.troubleshoot.title">Troubleshooting</h3>
-          <p data-i18n="skills.troubleshoot.desc">Gestructureerd fouten zoeken: symptomen isoleren, patronen herkennen en de kern van het probleem vinden, vaak verder dan de oorspronkelijke vraag.</p>
-          <ul class="skill-tags">
-            <li>Root cause analysis</li><li data-i18n="skills.troubleshoot.tag2">Log- &amp; foutanalyse</li><li>Pattern recognition</li><li>SQL</li><li>Git</li><li data-i18n="skills.troubleshoot.tag6">Python (in ontwikkeling)</li>
-          </ul>
-        </article>
-
-        <article class="skill-card">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M14.7 3.3a5 5 0 0 1 5.9 6.9l-3.5-3.5-2.8 2.8 3.5 3.5a5 5 0 0 1-6.9-5.9L4.4 13.6a2 2 0 1 0 2.8 2.8l3.1-3.1 1.4 1.4-3.1 3.1a4 4 0 1 1-5.7-5.7l6.8-6.8z"/></svg>
-          </div>
-          <h3 data-i18n="skills.field.title">Field Work</h3>
-          <p data-i18n="skills.field.desc">Hands-on werken op locatie: installaties, hardware-uitrol en klantcontact, met een achtergrond in installatietechniek en elektriciteit.</p>
-          <ul class="skill-tags">
-            <li data-i18n="skills.field.tag1">On-site installatie</li><li data-i18n="skills.field.tag2">Hardware-uitrol</li><li data-i18n="skills.field.tag3">Elektrische installaties</li><li data-i18n="skills.field.tag4">Klantcommunicatie</li><li data-i18n="skills.field.tag5">Documentatie</li><li data-i18n="skills.field.tag6">Rijbewijs B</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ERVARING & PROJECTEN ===== -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="section-number">03</span> <span data-i18n="projects.title">Ervaring &amp; projecten</span></h2>
-
-      <h3 class="subsection-title" data-i18n="projects.xpTitle">Werkervaring</h3>
-      <div class="xp-timeline">
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp1.period">2026 tot heden</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp1.title">ICT Field Engineer bij Electro Contractors (Waregem)</h4>
-            <p data-i18n="projects.xp1.desc">On-site installatie, configuratie en onderhoud van IT- en netwerkinfrastructuur bij klanten: van bekabeling en hardware tot netwerkapparatuur en troubleshooting op locatie.</p>
-          </div>
-        </article>
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp2.period">Nov 2022 tot 2026</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp2.title">Support Agent bij Cyncly (voorheen Compusoft)</h4>
-            <p data-i18n="projects.xp2.desc">Eerstelijns aanspreekpunt voor technische issues in B2B-klantomgevingen. Diagnose van uiteenlopende softwareproblemen, analyse van logs en foutmeldingen, en samenwerking met het ontwikkelingsteam bij escalaties. Supportcases gedocumenteerd in het ticketingsysteem.</p>
-          </div>
-        </article>
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp3.period">2019 tot 2022</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp3.title">Logistiek medewerker / IT-ondersteuning bij Wit-Gele Kruis Oost-Vlaanderen</h4>
-            <p data-i18n="projects.xp3.desc">Uitrol en configuratie van tablets voor verpleegkundigen en koppeling in het centrale systeem. Beheer van de hardware-voorraad: defecte toestellen analyseren en werkende onderdelen hergebruiken.</p>
-          </div>
-        </article>
-        <article class="xp-item">
-          <p class="xp-period" data-i18n="projects.xp4.period">2019</p>
-          <div class="xp-body">
-            <h4 data-i18n="projects.xp4.title">Stage installatietechniek bij Vanaudenaerde (Oudenaarde)</h4>
-            <p data-i18n="projects.xp4.desc">Installatie van verwarmingsinstallaties, zonnepanelen en elektrische voorzieningen, de basis van mijn hands-on ervaring met werken op locatie.</p>
-          </div>
-        </article>
-      </div>
-
-      <h3 class="subsection-title" data-i18n="projects.labTitle">Homelab &amp; eigen projecten</h3>
-      <p class="section-intro" data-i18n="projects.intro">Zelfstandig ontworpen, gebouwd en beheerd: mijn portfolio in uitvoering. Telkens beschreven zoals in het werkveld: situatie, aanpak en resultaat.</p>
-
-      <div class="projects-list">
-        <article class="project-card">
-          <header>
-            <h3 data-i18n="projects.p1.title">UniFi-netwerkinfrastructuur met VLAN-segmentatie</h3>
-            <ul class="skill-tags"><li>UniFi Cloud Gateway</li><li>VLAN</li><li>Wi-Fi 6/7</li><li>Firewall</li></ul>
-          </header>
-          <dl>
-            <div><dt data-i18n="projects.labelSituation">Situatie</dt><dd data-i18n="projects.p1.situation">Een standaard thuisnetwerk volstond niet meer: slimme apparaten, gasten en eigen servers zaten samen op één netwerk, zonder overzicht of controle.</dd></div>
-            <div><dt data-i18n="projects.labelApproach">Aanpak</dt><dd data-i18n="projects.p1.approach">Volledige netwerkinfrastructuur opgebouwd rond een UniFi Cloud Gateway als centrale router en firewall, met drie access points (2× UniFi Express 6, 1× U7 Pro) voor volledige Wi-Fi 6/7-dekking. Het netwerk gesegmenteerd in drie VLAN's (Default, Guest en IoT) en centraal beheerd via de UniFi Controller.</dd></div>
-            <div><dt data-i18n="projects.labelResult">Resultaat</dt><dd data-i18n="projects.p1.result">Een professioneel beheerd netwerk waarin IoT-apparaten en gasten geïsoleerd zijn van het hoofdnetwerk, met monitoring, firmware-updates en firewallbeheer vanuit één interface.</dd></div>
-          </dl>
-        </article>
-
-        <article class="project-card">
-          <header>
-            <h3 data-i18n="projects.p2.title">Proxmox-virtualisatie en Linux-homeserver</h3>
-            <ul class="skill-tags"><li>Proxmox VE</li><li>Linux</li><li>Docker Compose</li><li>Jellyfin</li></ul>
-          </header>
-          <dl>
-            <div><dt data-i18n="projects.labelSituation">Situatie</dt><dd data-i18n="projects.p2.situation">Ik wilde Linux-distributies en serverdiensten kunnen testen zonder telkens fysieke hardware te herinstalleren, én een server die betrouwbaar genoeg is voor dagelijks gebruik.</dd></div>
-            <div><dt data-i18n="projects.labelApproach">Aanpak</dt><dd data-i18n="projects.p2.approach">Proxmox-hypervisor opgezet voor VM-beheer en het testen van meerdere Linux-distributies in een gecontroleerde labomgeving. Daarnaast een Linux-homeserver ingericht als 24/7 omgeving: Jellyfin-mediaserver en meerdere diensten in Docker-containers, beheerd via Docker Compose.</dd></div>
-            <div><dt data-i18n="projects.labelResult">Resultaat</dt><dd data-i18n="projects.p2.result">Een stabiele labomgeving om te experimenteren én een server die dagelijks in productie draait, met praktijkervaring in virtualisatie, containerbeheer en Linux-serveronderhoud.</dd></div>
-          </dl>
-        </article>
-
-        <article class="project-card">
-          <header>
-            <h3 data-i18n="projects.p3.title">Remote toegang, security en domotica</h3>
-            <ul class="skill-tags"><li>Tailscale VPN</li><li>Raspberry Pi</li><li>Home Assistant</li><li>NAS</li></ul>
-          </header>
-          <dl>
-            <div><dt data-i18n="projects.labelSituation">Situatie</dt><dd data-i18n="projects.p3.situation">Thuisdiensten zoals de NAS en Home Assistant moesten veilig bereikbaar zijn van buitenshuis, zonder poorten open te zetten naar het internet.</dd></div>
-            <div><dt data-i18n="projects.labelApproach">Aanpak</dt><dd data-i18n="projects.p3.approach">Tailscale VPN geconfigureerd voor versleutelde remote toegang tot de NAS en Raspberry Pi vanaf elke locatie. Daarnaast Home Assistant opgezet op een Raspberry Pi voor domotica-automatisering.</dd></div>
-            <div><dt data-i18n="projects.labelResult">Resultaat</dt><dd data-i18n="projects.p3.result">Veilige toegang tot de volledige thuisinfrastructuur zonder blootgestelde poorten. Netwerk- en systeembeveiliging is mijn volgende leerdoel, daar verdiep ik me nu actief in.</dd></div>
-          </dl>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ROUNDFAIR ===== -->
-  <section id="roundfair" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title"><span class="section-number">04</span> Roundfair</h2>
-      <p class="section-intro" data-i18n="roundfair.intro">Naast mijn werk en homelab bouw ik aan een eigen iOS-app.</p>
-      <div class="app-card">
-        <img class="app-logo" src="assets/roundfair-logo.png" alt="Roundfair-logo" width="96" height="96">
-        <div class="app-body">
-          <p class="app-tagline" data-i18n="roundfair.tagline">Eigen project (iOS-app)</p>
-          <h3 data-i18n="roundfair.title">Eerlijk rondjes en kosten verdelen, zonder discussie</h3>
-          <p data-i18n="roundfair.what">Roundfair houdt bij wie het laatste rondje betaalde en wie aan de beurt is, en verdeelt kosten eerlijk binnen een groep. Geen gedoe met rekensommen of eeuwige discussies: de app houdt het overzicht, zodat niemand telkens opdraait voor de rekening.</p>
-          <p data-i18n="roundfair.why">Ik bouwde Roundfair om het volledige traject van een eigen product te doorlopen: van idee en design tot ontwikkeling en publicatie. Dezelfde aanpak als mijn homelab: iets écht bouwen is de beste manier om het te leren.</p>
-          <div class="app-actions">
-            <a href="https://roundfair.support" target="_blank" rel="noopener" class="btn btn-primary">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.93 9h-3.47a15.7 15.7 0 0 0-1.5-6.13A8.02 8.02 0 0 1 19.93 11zM12 4.04c.83 1.2 1.86 3.63 2.05 6.96h-4.1c.19-3.33 1.22-5.76 2.05-6.96zM4.07 13h3.47a15.7 15.7 0 0 0 1.5 6.13A8.02 8.02 0 0 1 4.07 13zm3.47-2H4.07a8.02 8.02 0 0 1 4.97-6.13A15.7 15.7 0 0 0 7.54 11zM12 19.96c-.83-1.2-1.86-3.63-2.05-6.96h4.1c-.19 3.33-1.22 5.76-2.05 6.96zm2.96-.83a15.7 15.7 0 0 0 1.5-6.13h3.47a8.02 8.02 0 0 1-4.97 6.13z"/></svg>
-              <span data-i18n="roundfair.cta">Bekijk roundfair.support</span>
-            </a>
-            <p class="app-soon" data-i18n="roundfair.soon">Binnenkort beschikbaar in de App Store</p>
+          <div class="hero-bottom">
+            <span data-i18n="hero.focus" class="eyebrow">Interesse in</span>
+            <p>
+              B2B Sales<span aria-hidden="true"> / </span>Account
+              Management<span aria-hidden="true"> / </span>FinTech
+            </p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="section-number">05</span> <span data-i18n="contact.title">Contact</span></h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3 data-i18n="contact.pitchTitle">Connecteren of een technische vraag?</h3>
-          <p data-i18n="contact.pitch">Wil je connecteren, heb je een vraag over mijn ervaring of een interessant voorstel? Stuur een bericht via het formulier of connecteer via LinkedIn, ik antwoord snel.</p>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener" class="btn btn-primary">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-              <span data-i18n="contact.linkedinBtn">Bekijk mijn LinkedIn</span>
-            </a>
+      </section>
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <div class="section-heading">
+              <span class="section-number">01</span>
+              <h2 data-i18n="about.title">
+                Technologie begrijpen. Mensen verder helpen.
+              </h2>
+            </div>
+          </div>
+          <div class="about-text">
+            <p data-i18n="about.p1" class="lead">
+              Ik ben Florian. Tijdens mijn werk in B2B softwaresupport leerde ik
+              vragen stellen, de echte behoefte achter een probleem begrijpen en
+              complexe informatie vertalen naar een duidelijke volgende stap.
+              Het klantcontact is voor mij een belangrijk deel van dat werk.
+            </p>
+            <p data-i18n="about.p2">
+              Nu wil ik voortbouwen op die ervaring in een rol met meer
+              commerciële verantwoordelijkheid. Ik ben nieuwsgierig naar hoe
+              bedrijven groeien, hoe klanten keuzes maken en hoe je een passende
+              oplossing verbindt aan hun doelen.
+            </p>
+            <p data-i18n="about.p3">
+              Technologie blijft mijn sterke basis. Met eigen projecten blijf ik
+              leren, problemen oplossen en verantwoordelijkheid nemen van eerste
+              idee tot werkende oplossing. Ik zoek een professionele omgeving
+              waar ik kan bijdragen, feedback krijg en verder kan groeien.
+            </p>
+            <dl class="about-facts">
+              <div>
+                <dt data-i18n="about.locationLabel">Regio</dt>
+                <dd data-i18n="about.location">Oudenaarde, België</dd>
+              </div>
+              <div>
+                <dt data-i18n="about.languagesLabel">Talen</dt>
+                <dd data-i18n="about.languages">
+                  Nederlands (moedertaal), Engels
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
-
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xnjkwpjv" method="POST">
-          <div class="form-field">
-            <label for="name" data-i18n="contact.form.name">Naam</label>
-            <input type="text" id="name" name="name" required autocomplete="name" data-i18n-placeholder="contact.form.namePh" placeholder="Uw naam">
+      </section>
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <h2 data-i18n="experience.title">
+              Ervaring met klanten als vertrekpunt.
+            </h2>
           </div>
-          <div class="form-field">
-            <label for="email" data-i18n="contact.form.email">E-mailadres</label>
-            <input type="email" id="email" name="email" required autocomplete="email" data-i18n-placeholder="contact.form.emailPh" placeholder="naam@bedrijf.be">
+          <p data-i18n="experience.intro" class="section-intro">
+            Mijn volgende stap bouwt voort op echte ervaring in support,
+            probleemoplossing en werken met gebruikers.
+          </p>
+          <div class="xp-timeline">
+            <article class="xp-item">
+              <p data-i18n="xp.0.period" class="xp-period">2026 tot heden</p>
+              <div class="xp-body">
+                <p class="xp-company">Electro Contractors, Waregem</p>
+                <h3 data-i18n="xp.0.title">ICT Field Engineer</h3>
+                <p data-i18n="xp.0.desc">
+                  Mijn huidige functie in een technische werkomgeving op
+                  locatie. Deze stap bouwt voort op mijn praktische achtergrond
+                  en ervaring met het analyseren van problemen.
+                </p>
+              </div>
+            </article>
+            <article class="xp-item xp-featured">
+              <p data-i18n="xp.1.period" class="xp-period">Nov 2022 tot 2026</p>
+              <div class="xp-body">
+                <p class="xp-company">Cyncly (Compusoft)</p>
+                <h3 data-i18n="xp.1.title">Support Agent</h3>
+                <p data-i18n="xp.1.desc">
+                  Aanspreekpunt voor zakelijke gebruikers met vragen over
+                  software. Klantproblemen analyseren, productkennis vertalen
+                  naar begrijpelijke uitleg en supportvragen documenteren en
+                  opvolgen. Bij escalaties samenwerken met het
+                  ontwikkelingsteam.
+                </p>
+                <ul class="skill-tags">
+                  <li data-i18n="xp.customer">Klantcommunicatie</li>
+                  <li data-i18n="xp.product">Productkennis</li>
+                  <li data-i18n="xp.ownership">Opvolging &amp; ownership</li>
+                </ul>
+              </div>
+            </article>
+            <article class="xp-item">
+              <p data-i18n="xp.2.period" class="xp-period">2019 tot 2022</p>
+              <div class="xp-body">
+                <p class="xp-company">Wit-Gele Kruis Oost-Vlaanderen</p>
+                <h3 data-i18n="xp.2.title">
+                  Logistiek medewerker / IT ondersteuning
+                </h3>
+                <p data-i18n="xp.2.desc">
+                  Tablets configureren en uitrollen voor verpleegkundigen,
+                  toestellen koppelen aan het centrale systeem en de
+                  hardwarevoorraad beheren. Een praktische basis in gebruikers
+                  ondersteunen en zorgvuldig met middelen omgaan.
+                </p>
+              </div>
+            </article>
+            <article class="xp-item">
+              <p data-i18n="xp.3.period" class="xp-period">2019</p>
+              <div class="xp-body">
+                <p class="xp-company">Vanaudenaerde, Oudenaarde</p>
+                <h3 data-i18n="xp.3.title">Stage installatietechniek</h3>
+                <p data-i18n="xp.3.desc">
+                  Praktijkervaring met verwarmingsinstallaties, zonnepanelen en
+                  elektrische voorzieningen. De start van mijn technische
+                  achtergrond en mijn interesse in hoe systemen werken.
+                </p>
+              </div>
+            </article>
           </div>
-          <div class="form-field">
-            <label for="message" data-i18n="contact.form.message">Bericht</label>
-            <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.form.messagePh" placeholder="Waarmee kan ik u helpen?"></textarea>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <h2 data-i18n="skills.title">
+              Wat ik meebreng naar een commerciële rol.
+            </h2>
           </div>
-          <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.form.submit">Verstuur bericht</button>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+          <p data-i18n="skills.intro" class="section-intro">
+            Overdraagbare vaardigheden uit klantcontact en technische support,
+            aangevuld met de ambitie om het commerciële vak te leren.
+          </p>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <span class="skill-index" aria-hidden="true">01</span>
+              <h3 data-i18n="skill.0.title">Klantcommunicatie</h3>
+              <p data-i18n="skill.0.desc">
+                Luisteren, doorvragen en uitleg afstemmen op de persoon
+                tegenover mij.
+              </p>
+            </article>
+            <article class="skill-card">
+              <span class="skill-index" aria-hidden="true">02</span>
+              <h3 data-i18n="skill.1.title">Behoeften ontdekken</h3>
+              <p data-i18n="skill.1.desc">
+                Verder kijken dan de eerste vraag om te begrijpen waar iemand
+                werkelijk mee geholpen is.
+              </p>
+            </article>
+            <article class="skill-card">
+              <span class="skill-index" aria-hidden="true">03</span>
+              <h3 data-i18n="skill.2.title">Oplossingen uitleggen</h3>
+              <p data-i18n="skill.2.desc">
+                Technische informatie vertalen naar begrijpelijke keuzes en
+                praktische vervolgstappen.
+              </p>
+            </article>
+            <article class="skill-card">
+              <span class="skill-index" aria-hidden="true">04</span>
+              <h3 data-i18n="skill.3.title">Verantwoordelijkheid nemen</h3>
+              <p data-i18n="skill.3.desc">
+                Vragen opvolgen, prioriteiten stellen en samenwerken wanneer een
+                probleem extra expertise vraagt.
+              </p>
+            </article>
+            <article class="skill-card">
+              <span class="skill-index" aria-hidden="true">05</span>
+              <h3 data-i18n="skill.4.title">Relaties opbouwen</h3>
+              <p data-i18n="skill.4.desc">
+                Met aandacht, duidelijke verwachtingen en betrouwbare opvolging
+                werken aan vertrouwen.
+              </p>
+            </article>
+            <article class="skill-card">
+              <span class="skill-index" aria-hidden="true">06</span>
+              <h3 data-i18n="skill.5.title">Commerciële nieuwsgierigheid</h3>
+              <p data-i18n="skill.5.desc">
+                Willen begrijpen hoe een product waarde biedt, waarom klanten
+                kiezen en hoe bedrijven groeien.
+              </p>
+            </article>
+          </div>
+          <div class="technical-foundation">
+            <div>
+              <p data-i18n="technical.label" class="eyebrow">
+                Technische basis
+              </p>
+              <h3 data-i18n="technical.title">
+                Een product beter begrijpen begint bij de techniek.
+              </h3>
+              <p data-i18n="technical.desc">
+                Praktische kennis uit support en persoonlijke projecten helpt
+                mij technische producten en klantproblemen beter te begrijpen.
+                Mijn infrastructuurervaring is vooral opgebouwd in mijn eigen
+                homelab.
+              </p>
+            </div>
+            <ul class="skill-tags">
+              <li>Linux</li>
+              <li>Networking</li>
+              <li>Proxmox</li>
+              <li data-i18n="technical.virtualization">Virtualisatie</li>
+              <li>Docker</li>
+              <li>DNS</li>
+              <li>VLANs</li>
+              <li>IT troubleshooting</li>
+              <li data-i18n="technical.infrastructure">Infrastructuur</li>
+              <li data-i18n="technical.scripting">Scripting (basis)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-number">04</span>
+            <h2 data-i18n="projects.title">
+              Nieuwsgierigheid die iets oplevert.
+            </h2>
+          </div>
+          <p data-i18n="projects.intro" class="section-intro">
+            Persoonlijke projecten laten zien hoe ik leer: een behoefte
+            herkennen, zelf aan de slag gaan en blijven verbeteren.
+          </p>
+          <article id="roundfair" class="app-card">
+            <div class="app-identity">
+              <img
+                class="app-logo"
+                src="assets/roundfair-logo.png"
+                alt="Roundfair"
+                width="96"
+                height="96"
+                loading="lazy"
+              />
+              <p>Roundfair</p>
+              <span data-i18n="roundfair.label">Eigen iOS project</span>
+            </div>
+            <div class="app-body">
+              <h3 data-i18n="roundfair.title">
+                Van een alledaags probleem naar een eigen product.
+              </h3>
+              <p data-i18n="roundfair.what">
+                Met Roundfair werk ik aan een app om rondjes en gedeelde kosten
+                binnen een groep eerlijk bij te houden. Het vertrekpunt is een
+                herkenbare behoefte: duidelijkheid over wie wat heeft betaald.
+              </p>
+              <p data-i18n="roundfair.why">
+                Het project geeft mij de kans om productkeuzes, gebruiksgemak en
+                techniek samen te brengen. Ik leer door zelf
+                verantwoordelijkheid te nemen voor het idee, het ontwerp en de
+                ontwikkeling.
+              </p>
+              <a
+                href="https://roundfair.support"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+                ><span data-i18n="roundfair.cta">Ontdek Roundfair</span>
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <div class="projects-list">
+            <article class="project-card">
+              <h3 data-i18n="project.0.title">
+                Netwerken begrijpen door ze te bouwen
+              </h3>
+              <p data-i18n="project.0.desc">
+                Een UniFi thuisnetwerk met gescheiden VLANs voor eigen
+                apparaten, gasten en IoT. Een oefening in behoeften vertalen
+                naar een structuur en zelf het beheer opnemen.
+              </p>
+              <p class="project-tech">UniFi / VLANs / DNS</p>
+            </article>
+            <article class="project-card">
+              <h3 data-i18n="project.1.title">
+                Een eigen omgeving om te blijven leren
+              </h3>
+              <p data-i18n="project.1.desc">
+                Met Proxmox, Linux en Docker test ik systemen en diensten in
+                mijn homelab. Ik onderzoek problemen, probeer oplossingen uit en
+                bouw mijn technische inzicht stap voor stap op.
+              </p>
+              <p class="project-tech">Proxmox / Linux / Docker</p>
+            </article>
+            <article class="project-card">
+              <h3 data-i18n="project.2.title">
+                Toegang en automatisering eenvoudiger maken
+              </h3>
+              <p data-i18n="project.2.desc">
+                Tailscale voor toegang op afstand en Home Assistant op een
+                Raspberry Pi. Kleine praktische projecten die mij leren
+                oplossingen vanuit dagelijks gebruik te bekijken.
+              </p>
+              <p class="project-tech">Tailscale / Home Assistant</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="direction" class="section direction-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-number">05</span>
+            <h2 data-i18n="direction.title">Waar ik naartoe wil.</h2>
+          </div>
+          <div class="direction-grid">
+            <div>
+              <h3 data-i18n="direction.lead" class="direction-lead">
+                Op het kruispunt van technologie, klanten en business.
+              </h3>
+              <p data-i18n="direction.desc">
+                Ik wil mijn technische en klantgerichte ervaring inzetten in een
+                commerciële functie, met ruimte om salesvaardigheden te
+                ontwikkelen en door te groeien in verantwoordelijkheid. Een
+                sterk, professioneel en liefst internationaal bedrijf spreekt
+                mij aan.
+              </p>
+              <p data-i18n="direction.entry">
+                Ik sta open voor instapmogelijkheden in business development,
+                technology sales en customer success met commerciële
+                verantwoordelijkheid. Accountmanagement en bredere commerciële
+                verantwoordelijkheid zijn richtingen waarin ik wil groeien.
+              </p>
+            </div>
+            <div class="direction-areas">
+              <article>
+                <h3 data-i18n="direction.0.title">
+                  B2B sales &amp; accountmanagement
+                </h3>
+                <p data-i18n="direction.0.desc">
+                  Klantbehoeften verbinden aan passende oplossingen en duurzame
+                  relaties.
+                </p>
+              </article>
+              <article>
+                <h3 data-i18n="direction.1.title">
+                  Business development &amp; technology
+                </h3>
+                <p data-i18n="direction.1.desc">
+                  Nieuwe kansen ontdekken en de waarde van technische producten
+                  leren overbrengen.
+                </p>
+              </article>
+              <article>
+                <h3 data-i18n="direction.2.title">
+                  FinTech &amp; financiële dienstverlening
+                </h3>
+                <p data-i18n="direction.2.desc">
+                  Interesse in commerciële functies waar mijn achtergrond een
+                  realistische instap biedt.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="business-note">
+            <p data-i18n="business.label" class="eyebrow">Wat mij bezighoudt</p>
+            <p data-i18n="business.desc">
+              Bedrijven, finance, markten en businessmodellen: ik wil begrijpen
+              hoe organisaties waarde creëren, geld verdienen en hun commerciële
+              strategie bepalen. Die interesse motiveert mijn volgende
+              loopbaanstap.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-heading">
+              <span class="section-number">06</span>
+              <h2 data-i18n="contact.title">Laten we kennismaken.</h2>
+            </div>
+            <p data-i18n="contact.pitch" class="contact-pitch">
+              Zoek je iemand die technische kennis en klantgerichte ervaring
+              meebrengt, met de ambitie om commercieel te groeien? Ik maak graag
+              kennis over een passende rol of een interessant gesprek.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/florian-ronsse-1914231bb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-dark"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86-0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+                /></svg
+              ><span data-i18n="contact.linkedin"
+                >Connecteer op LinkedIn</span
+              ></a
+            >
+          </div>
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/xnjkwpjv"
+            method="POST"
+          >
+            <div class="form-field">
+              <label data-i18n="form.name" for="name">Naam</label>
+              <input
+                id="name"
+                name="name"
+                required
+                placeholder="Uw naam"
+                data-i18n-placeholder="form.namePlaceholder"
+                type="text"
+                autocomplete="name"
+                maxlength="254"
+              />
+            </div>
+            <div class="form-field">
+              <label data-i18n="form.email" for="email">E-mailadres</label>
+              <input
+                id="email"
+                name="email"
+                required
+                placeholder="naam@bedrijf.be"
+                data-i18n-placeholder="form.emailPlaceholder"
+                type="email"
+                autocomplete="email"
+                maxlength="254"
+              />
+            </div>
+            <div class="form-field">
+              <label data-i18n="form.message" for="message">Bericht</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Vertel me over de rol of je vraag."
+                data-i18n-placeholder="form.messagePlaceholder"
+                rows="5"
+                maxlength="5000"
+              ></textarea>
+            </div>
+            <button
+              data-i18n="form.submit"
+              type="submit"
+              class="btn btn-dark btn-full"
+            >
+              Verstuur bericht
+            </button>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Florian Ronsse</p>
+        <p data-i18n="footer.tagline">Technologie. Business. Mensen.</p>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/florian-ronsse-1914231bb"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          ><a
+            href="https://roundfair.support"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Roundfair</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year">2026</span> Florian Ronsse, <span data-i18n="footer.tagline">ICT Field Engineer</span></p>
-    <ul class="footer-links">
-      <li><a href="https://www.linkedin.com/in/florian-ronsse-1914231bb" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="https://roundfair.support" target="_blank" rel="noopener">Roundfair</a></li>
-    </ul>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
