@@ -30,7 +30,7 @@ const translations = {
     "hero.businessDesc": "Eén richting: B2B sales en accountmanagement.",
     "hero.focus": "Mijn volgende stap",
     "hero.focusValue": "B2B sales & accountmanagement in software",
-    "hero.available": "Beschikbaar vanaf",
+    "hero.available": "Beschikbaarheid",
     "proof.title": "Waar ik dagelijks mee werkte",
     "proof.source": "Gebaseerd op mijn rol als Support Agent bij Cyncly (Compusoft) en op wat ik daarnaast zelf bouwde.",
     "about.title": "Technologie begrijpen. Mensen verder helpen.",
@@ -169,6 +169,8 @@ const translations = {
     "roundfair.traction": "Live in de App Store. Na de eerste release volgde versie 2.0, met locaties, rondes in één tik en live delen via iCloud.",
     "roundfair.appstore": "Bekijk in de App Store",
     "about.mobility": "Rijbewijs B en eigen wagen",
+    "hero.availableValue": "Binnen twee weken",
+    "about.availability": "Korte opzegtermijn, ik kan binnen twee weken starten",
   },
   en: {
     "skip": "Skip to content",
@@ -200,7 +202,7 @@ const translations = {
     "hero.businessDesc": "One direction: B2B sales and account management.",
     "hero.focus": "My next step",
     "hero.focusValue": "B2B sales & account management in software",
-    "hero.available": "Available from",
+    "hero.available": "Availability",
     "proof.title": "What I worked with every day",
     "proof.source": "Based on my role as a Support Agent at Cyncly (Compusoft) and on what I built alongside it.",
     "about.title": "Understand technology. Help people move forward.",
@@ -339,6 +341,8 @@ const translations = {
     "roundfair.traction": "Live in the App Store. The first release was followed by version 2.0, with locations, one-tap rounds and live sharing over iCloud.",
     "roundfair.appstore": "View in the App Store",
     "about.mobility": "Driving licence B and my own car",
+    "hero.availableValue": "Within two weeks",
+    "about.availability": "Short notice period, I can start within two weeks",
   },
 };
 

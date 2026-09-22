@@ -10,13 +10,16 @@ achtergrond verdwijnt.
 
 ## 1. Persoonlijke gegevens (index.html en cv.html)
 
-Mailadres en telefoonnummer staan er bewust niet op, om privacyredenen.
-Recruiters bereiken je via het contactformulier (dat loopt via Formspree,
-dus je adres blijft verborgen) en via LinkedIn. Rijbewijs en wagen zijn
-ingevuld. Wat nog rest:
+Klaar. Mailadres en telefoonnummer staan er bewust niet op, om
+privacyredenen: recruiters bereiken je via het contactformulier (dat loopt
+via Formspree, dus je adres blijft verborgen) en via LinkedIn. Rijbewijs,
+wagen en beschikbaarheid zijn ingevuld.
 
-- **Beschikbaar vanaf.** Datum in de hero.
-- **Beschikbaarheid.** Opzegtermijn of startdatum, bij "Over mij" en in het cv.
+Controleer wel even of "binnen twee weken" klopt met je arbeidsovereenkomst.
+Bij ongeveer drie maanden anciënniteit is de wettelijke opzegtermijn voor
+wie zelf ontslag neemt 1 week (onder 3 maanden) of 2 weken (3 tot 6
+maanden), dus twee weken dekt beide gevallen. Staat er in je contract iets
+anders, pas dan de tekst aan in de hero, bij "Over mij" en in het cv.
 
 ## 2. Foto (index.html)
 
