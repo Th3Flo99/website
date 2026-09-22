@@ -288,11 +288,24 @@ textarea {
   background: #d1f5e6;
 }
 .btn-outline {
-  color: white;
-  border-color: #65828c;
+  color: var(--color-ink);
+  border-color: var(--color-border);
   background: transparent;
 }
 .btn-outline:hover {
+  background: var(--color-bg-alt);
+  border-color: var(--color-ink-soft);
+}
+/* The same button on the dark sections, where ink would disappear. */
+.hero .btn-outline,
+.learning-section .btn-outline,
+.direction-section .btn-outline {
+  color: white;
+  border-color: #65828c;
+}
+.hero .btn-outline:hover,
+.learning-section .btn-outline:hover,
+.direction-section .btn-outline:hover {
   background: #244550;
   border-color: #b9cdd2;
 }
@@ -1060,16 +1073,22 @@ h1 > span {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
 }
+.proof-grid > div {
+  display: flex;
+  flex-direction: column;
+}
 .proof-value {
-  font-size: clamp(2rem, 4vw, 2.9rem);
+  font-size: clamp(1.2rem, 1.9vw, 1.5rem);
   font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
   color: var(--color-accent-soft);
+  text-wrap: balance;
+  margin-bottom: 0.5rem;
 }
 .proof-grid dd {
-  margin-top: 0.4rem;
+  margin-top: auto;
   color: #c8d9de;
   font-size: 0.9375rem;
   max-width: 15rem;
@@ -1182,26 +1201,20 @@ h1 > span {
 .app-status {
   display: inline-block;
   margin-top: 0.9rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: #0f4a3b;
+  font-weight: 600;
 }
-.app-shots {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  max-width: 520px;
-  margin-block: 1.75rem;
+.app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
 }
-.app-shots img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-  border: 1px solid var(--color-border);
-}
-.shot-slot {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 9 / 19;
-  font-size: 0.8125rem;
-  text-align: center;
+.app-actions .btn {
+  gap: 0.5rem;
 }
 .projects-lab-title {
   font-size: 1.25rem;
@@ -1289,9 +1302,6 @@ h1 > span {
     padding-left: 0;
     padding-top: 1.5rem;
   }
-  .app-shots {
-    max-width: 400px;
-  }
   .projects-lab-title {
     margin-top: 3rem;
   }
@@ -1310,11 +1320,9 @@ h1 > span {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .contact-actions .btn {
+  .contact-actions .btn,
+  .app-actions .btn {
     width: 100%;
     justify-content: center;
-  }
-  .app-shots {
-    gap: 0.6rem;
   }
 }
