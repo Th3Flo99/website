@@ -1,6 +1,6 @@
 # Nog zelf in te vullen
 
-Alle plekken hieronder staan op de site met een **gele markering**. Zoek in de
+De plek hieronder staat op de site met een **gele markering**. Zoek in de
 code op `needs-input`: elke markering is één span of blok. Vervang de tekst
 door de echte waarde en haal daarna `class="needs-input"` weg, zodat de gele
 achtergrond verdwijnt.
@@ -8,9 +8,9 @@ achtergrond verdwijnt.
 > Zolang er nog gele markeringen staan, is deze branch niet klaar om naar
 > `main` te gaan. Op `main` staat de live site.
 
-## 1. Persoonlijke gegevens (index.html en cv.html)
+## Al geregeld: persoonlijke gegevens
 
-Klaar. Mailadres en telefoonnummer staan er bewust niet op, om
+Mailadres en telefoonnummer staan er bewust niet op, om
 privacyredenen: recruiters bereiken je via het contactformulier (dat loopt
 via Formspree, dus je adres blijft verborgen) en via LinkedIn. Rijbewijs,
 wagen en beschikbaarheid zijn ingevuld.
@@ -21,18 +21,12 @@ wie zelf ontslag neemt 1 week (onder 3 maanden) of 2 weken (3 tot 6
 maanden), dus twee weken dekt beide gevallen. Staat er in je contract iets
 anders, pas dan de tekst aan in de hero, bij "Over mij" en in het cv.
 
-## 2. Foto (index.html)
+## Enige openstaande punt: je foto (index.html)
 
 Het gele vak bij "Over mij". Zet je foto als `assets/florian.jpg` en vervang
 het blok door de `<img>` die er in commentaar boven staat. Gebruik dezelfde
 foto als op LinkedIn, dat maakt je herkenbaar voor een recruiter die beide
 bekijkt.
-
-## 3. Eén voorbeeld bij "Relaties opbouwen" (index.html)
-
-De vijfde sterktekaart wacht op een concreet voorbeeld, bijvoorbeeld een
-klant die je rechtstreeks bleef contacteren of een moeilijke klant die je
-terugwon. Eén zin volstaat.
 
 ## Optioneel, maar het sterkste dat je nog kan toevoegen: cijfers
 
@@ -58,5 +52,6 @@ sociale bewijs dat de site nu ook mist.
 
 ## Daarna
 
-Controleer met `grep -rn "needs-input" index.html cv.html`. Blijft daar niets
-over, dan is de site klaar voor `main`.
+Controleer met `grep -rn "needs-input" index.html`. Blijft daar niets over,
+dan is de site klaar voor `main`. In `cv.html` is de enige overgebleven
+treffer de CSS-regel zelf, die mag blijven staan.
