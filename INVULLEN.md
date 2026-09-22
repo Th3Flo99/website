@@ -10,15 +10,13 @@ achtergrond verdwijnt.
 
 ## 1. Persoonlijke gegevens (index.html en cv.html)
 
-- **E-mailadres.** Staat bij Contact en bovenaan het cv. Overweeg
-  `florian@florianronsse.net` op je eigen domein in plaats van een
-  gmail-adres, dat oogt professioneler op een cv.
-- **Telefoonnummer.** Optioneel. Wil je het niet delen, verwijder dan het
-  hele `<div>` met `contact.phoneLabel` en de regel in het cv.
+Mailadres en telefoonnummer staan er bewust niet op, om privacyredenen.
+Recruiters bereiken je via het contactformulier (dat loopt via Formspree,
+dus je adres blijft verborgen) en via LinkedIn. Rijbewijs en wagen zijn
+ingevuld. Wat nog rest:
+
 - **Beschikbaar vanaf.** Datum in de hero.
 - **Beschikbaarheid.** Opzegtermijn of startdatum, bij "Over mij" en in het cv.
-- **Mobiliteit.** Rijbewijs B, eigen wagen, en tot welke afstand je wil
-  pendelen. Voor sales is dit een harde filter.
 
 ## 2. Foto (index.html)
 

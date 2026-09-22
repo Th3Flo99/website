@@ -139,9 +139,7 @@ const translations = {
     "business.label": "Wat mij bezighoudt",
     "business.desc": "Financiële markten, bedrijven en businessmodellen boeien mij: hoe ontstaat waarde, waarom kiezen klanten een product en hoe verdient een bedrijf eraan? Die interesse in commerciële strategie vult mijn achtergrond in softwaresupport aan.",
     "contact.title": "Laten we kennismaken.",
-    "contact.pitch": "Zoek je iemand met 3,5 jaar ervaring met zakelijke klanten, productkennis en de drive om commercieel door te groeien? Ik maak graag kennis. Ik antwoord binnen twee werkdagen.",
-    "contact.emailLabel": "E-mail",
-    "contact.phoneLabel": "Telefoon",
+    "contact.pitch": "Zoek je iemand met 3,5 jaar ervaring met zakelijke klanten, productkennis en de drive om commercieel door te groeien? Stuur me een bericht via het formulier op deze pagina of via LinkedIn. Ik antwoord binnen twee werkdagen.",
     "contact.linkedin": "Connecteer op LinkedIn",
     "contact.cv": "Bekijk mijn cv",
     "form.name": "Naam",
@@ -170,6 +168,7 @@ const translations = {
     "roundfair.status": "Live in de App Store",
     "roundfair.traction": "Live in de App Store. Na de eerste release volgde versie 2.0, met locaties, rondes in één tik en live delen via iCloud.",
     "roundfair.appstore": "Bekijk in de App Store",
+    "about.mobility": "Rijbewijs B en eigen wagen",
   },
   en: {
     "skip": "Skip to content",
@@ -310,9 +309,7 @@ const translations = {
     "business.label": "What keeps me interested",
     "business.desc": "Financial markets, companies and business models fascinate me: how is value created, why do customers pick a product and how does a company earn from it? That interest in commercial strategy complements my background in software support.",
     "contact.title": "Let's meet.",
-    "contact.pitch": "Looking for someone with 3.5 years of experience with business customers, real product knowledge and the drive to grow commercially? I would be glad to talk. I reply within two working days.",
-    "contact.emailLabel": "Email",
-    "contact.phoneLabel": "Phone",
+    "contact.pitch": "Looking for someone with 3.5 years of experience with business customers, real product knowledge and the drive to grow commercially? Send me a message through the form on this page or on LinkedIn. I reply within two working days.",
     "contact.linkedin": "Connect on LinkedIn",
     "contact.cv": "View my CV",
     "form.name": "Name",
@@ -341,6 +338,7 @@ const translations = {
     "roundfair.status": "Live in the App Store",
     "roundfair.traction": "Live in the App Store. The first release was followed by version 2.0, with locations, one-tap rounds and live sharing over iCloud.",
     "roundfair.appstore": "View in the App Store",
+    "about.mobility": "Driving licence B and my own car",
   },
 };
 
