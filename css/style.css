@@ -1039,24 +1039,6 @@ h1 > span {
   }
 }
 
-/* Placeholder marker for facts only Florian can supply. Remove the class
-   together with the placeholder text once the real value is filled in. */
-.needs-input {
-  display: inline-block;
-  background: #fff1c9;
-  color: #6b4e00;
-  box-shadow: inset 0 -2px 0 #d29b00;
-  border-radius: 4px;
-  padding: 0 0.35em;
-  font-weight: 600;
-  font-size: 0.9em;
-}
-.hero .needs-input,
-.direction-section .needs-input {
-  background: #ffe49a;
-  color: #4a3600;
-}
-
 /* Hard numbers, the first thing a commercial recruiter scans for. */
 .proof-bar {
   background: var(--color-dark);
@@ -1115,18 +1097,6 @@ h1 > span {
   height: auto;
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
-}
-.photo-slot {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  aspect-ratio: 4 / 5;
-  padding: 1.5rem;
-  border-radius: var(--radius);
-}
-.photo-slot p {
-  font-size: 0.875rem;
-  line-height: 1.5;
 }
 
 /* Self-taught is the education section, so it gets a section of its own. */
