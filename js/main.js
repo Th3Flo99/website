@@ -1,11 +1,10 @@
-/* Bilingual copy. Dutch remains available without JavaScript. */
 const translations = {
   nl: {
     skip: "Ga naar de inhoud",
     "nav.about": "Over mij",
     "nav.experience": "Ervaring",
     "nav.skills": "Sterktes",
-    "nav.projects": "Projecten",
+    "nav.projects": "Werk",
     "nav.direction": "Ambitie",
     "nav.contact": "Contact",
     "hero.location": "Oudenaarde, België",
@@ -170,13 +169,17 @@ const translations = {
       "Zelf keuzes maken en leren door een idee uit te werken tot een bruikbaar product.",
     "schema.description":
       "Florian Ronsse heeft ongeveer vier jaar ervaring in B2B softwaresupport en klantcommunicatie. Hij bouwt Roundfair en richt zijn volgende loopbaanstap op commerciële technologie, sales en accountmanagement.",
+    "about.kicker": "Profiel",
+    "technical.eyebrow": "Technische basis",
+    "projects.title": "Nieuwsgierigheid die iets oplevert.",
+    "projects.intro": "Roundfair brengt mijn interesse in gebruikers, producten en technologie samen. Mijn homelab ondersteunt dat met praktische zelfstudie en probleemoplossing.",
   },
   en: {
     skip: "Skip to content",
     "nav.about": "About",
     "nav.experience": "Experience",
     "nav.skills": "Strengths",
-    "nav.projects": "Projects",
+    "nav.projects": "Work",
     "nav.direction": "Direction",
     "nav.contact": "Contact",
     "hero.location": "Oudenaarde, Belgium",
@@ -341,170 +344,125 @@ const translations = {
       "Making decisions myself and learning by developing an idea into a useful product.",
     "schema.description":
       "Florian Ronsse has around four years of experience in B2B software support and customer communication. He is building Roundfair and focusing his next career step on commercial technology, sales and account management.",
+    "about.kicker": "Profile",
+    "technical.eyebrow": "Technical foundation",
+    "projects.title": "Curiosity that turns into something real.",
+    "projects.intro": "Roundfair brings together my interest in users, products and technology. My homelab supports that with practical self-study and troubleshooting.",
   },
 };
 
-/* Navigation and language are progressive enhancements, never prerequisites. */
-const burger = document.getElementById("nav-burger");
-const navLinks = document.getElementById("nav-links");
-const form = document.getElementById("contact-form");
-const formStatus = document.getElementById("form-status");
 let currentLang = "nl";
 let formState = "";
 let submitting = false;
-try {
-  const saved = localStorage.getItem("lang");
-  if (Object.hasOwn(translations, saved)) currentLang = saved;
-} catch {
-  /* Storage can be unavailable in private or restricted browsers. */
-}
 
-function updateMenuLabel() {
-  const key =
-    burger.getAttribute("aria-expanded") === "true" ? "nav.close" : "nav.open";
-  burger.setAttribute("aria-label", translations[currentLang][key]);
-}
+const form = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+const header = document.getElementById("site-header");
+const burger = document.getElementById("nav-burger");
+const nav = document.querySelector(".nav");
+const year = document.getElementById("year");
+if (year) year.textContent = String(new Date().getFullYear());
 
-function setLanguage(lang) {
+function applyLanguage(lang) {
   if (!Object.hasOwn(translations, lang)) return;
   currentLang = lang;
   const dict = translations[lang];
-  try {
-    localStorage.setItem("lang", lang);
-  } catch {
-    /* Language still works. */
-  }
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    if (Object.hasOwn(dict, el.dataset.i18n))
-      el.textContent = dict[el.dataset.i18n];
-  });
-  ["placeholder", "aria-label"].forEach((attribute) => {
-    document.querySelectorAll(`[data-i18n-${attribute}]`).forEach((el) => {
-      const key = el.getAttribute(`data-i18n-${attribute}`);
-      if (Object.hasOwn(dict, key)) el.setAttribute(attribute, dict[key]);
-    });
-  });
   document.documentElement.lang = lang;
-  document.title = dict["meta.title"];
-  const personNode = document.querySelector(
-    'script[type="application/ld+json"]',
-  );
-  if (personNode) {
-    const person = JSON.parse(personNode.textContent);
-    person.description = dict["schema.description"];
-    personNode.textContent = JSON.stringify(person);
-  }
-  const metaValues = {
-    'meta[name="description"]': dict["meta.description"],
-    'meta[property="og:title"]': dict["meta.title"],
-    'meta[property="og:description"]': dict["meta.description"],
-    'meta[property="og:locale"]': lang === "nl" ? "nl_BE" : "en_US",
-    'meta[property="og:locale:alternate"]': lang === "nl" ? "en_US" : "nl_BE",
-    'meta[name="twitter:title"]': dict["meta.title"],
-    'meta[name="twitter:description"]': dict["meta.description"],
-  };
-  Object.entries(metaValues).forEach(([selector, content]) => {
-    document.querySelector(selector)?.setAttribute("content", content);
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    const key = node.dataset.i18n;
+    if (dict[key]) node.textContent = dict[key];
   });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
+    const key = node.dataset.i18nPlaceholder;
+    if (dict[key]) node.setAttribute("placeholder", dict[key]);
+  });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    const key = node.dataset.i18nAriaLabel;
+    if (dict[key]) node.setAttribute("aria-label", dict[key]);
+  });
+  const title = document.querySelector("title");
+  const description = document.querySelector('meta[name="description"]');
+  if (dict["meta.title"]) title.textContent = dict["meta.title"];
+  if (description && dict["meta.description"]) description.setAttribute("content", dict["meta.description"]);
   document.querySelectorAll(".lang-btn").forEach((button) => {
     const active = button.dataset.lang === lang;
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
   });
-  if (formState) formStatus.textContent = dict[`form.${formState}`];
-  if (submitting)
-    form.querySelector('[type="submit"]').textContent = dict["form.sending"];
-  updateMenuLabel();
+  try { localStorage.setItem("lang", lang); } catch (err) {}
+  if (formState && formStatus) formStatus.textContent = dict[`form.${formState}`] || "";
 }
 
-function closeMenu(restoreFocus = false) {
-  navLinks.classList.remove("open");
-  burger.setAttribute("aria-expanded", "false");
-  updateMenuLabel();
-  if (restoreFocus) burger.focus();
+document.querySelectorAll(".lang-btn").forEach((button) => {
+  button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+});
+
+function onScroll() {
+  header.classList.toggle("is-scrolled", window.scrollY > 12);
 }
+onScroll();
+window.addEventListener("scroll", onScroll, { passive: true });
 
 burger.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
+  const open = burger.getAttribute("aria-expanded") !== "true";
   burger.setAttribute("aria-expanded", String(open));
-  updateMenuLabel();
+  nav.classList.toggle("open", open);
+  header.classList.toggle("menu-open", open);
+  const key = open ? "nav.close" : "nav.open";
+  burger.setAttribute("aria-label", translations[currentLang][key] || burger.getAttribute("aria-label"));
 });
-navLinks.addEventListener("click", (event) => {
-  if (event.target.closest("a")) closeMenu();
-});
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && burger.getAttribute("aria-expanded") === "true")
-    closeMenu(true);
-});
-document.addEventListener("click", (event) => {
-  if (!event.target.closest(".nav")) closeMenu();
-});
-document.addEventListener("focusin", (event) => {
-  if (!event.target.closest(".nav")) closeMenu();
-});
-const mobileQuery = window.matchMedia("(max-width: 900px)");
-mobileQuery.addEventListener("change", () => closeMenu());
-document.querySelectorAll(".lang-btn").forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.lang));
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.setAttribute("aria-expanded", "false");
+    nav.classList.remove("open");
+    header.classList.remove("menu-open");
+  });
 });
 
-/* Preserve the existing Formspree endpoint and native form fallback. */
+const sections = [...document.querySelectorAll("main section[id]")];
+const navLinks = [...document.querySelectorAll(".nav-links a")];
+const spy = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => {
+      link.toggleAttribute("aria-current", link.getAttribute("href") === `#${entry.target.id}`);
+    });
+  });
+}, { rootMargin: "-40% 0px -50% 0px" });
+sections.forEach((section) => spy.observe(section));
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (submitting || !form.reportValidity()) return;
   submitting = true;
   formState = "sending";
   const submitButton = form.querySelector('[type="submit"]');
-  submitButton.disabled = true;
+  const idleLabel = submitButton.textContent;
   form.setAttribute("aria-busy", "true");
   formStatus.className = "form-status";
   formStatus.textContent = translations[currentLang]["form.sending"];
   submitButton.textContent = translations[currentLang]["form.sending"];
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 20000);
   try {
     const response = await fetch(form.action, {
       method: "POST",
       body: new FormData(form),
       headers: { Accept: "application/json" },
-      signal: controller.signal,
     });
-    if (!response.ok) throw new Error("Message delivery failed");
+    if (!response.ok) throw new Error("form");
     formState = "success";
     form.reset();
-  } catch {
+  } catch (err) {
     formState = "error";
   } finally {
-    clearTimeout(timeout);
     submitting = false;
-    submitButton.disabled = false;
-    submitButton.textContent = translations[currentLang]["form.submit"];
+    submitButton.textContent = translations[currentLang]["form.submit"] || idleLabel;
     form.setAttribute("aria-busy", "false");
     formStatus.className = `form-status ${formState}`;
     formStatus.textContent = translations[currentLang][`form.${formState}`];
   }
 });
 
-/* Reflect the section in view without interfering with anchor navigation. */
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        navLinks.querySelectorAll("a").forEach((link) => {
-          if (link.hash === `#${entry.target.id}`)
-            link.setAttribute("aria-current", "location");
-          else link.removeAttribute("aria-current");
-        });
-      });
-    },
-    { rootMargin: "-15% 0px -65% 0px", threshold: 0 },
-  );
-  document
-    .querySelectorAll("main > section")
-    .forEach((section) => observer.observe(section));
-}
-
-document.getElementById("year").textContent = new Date().getFullYear();
-setLanguage(currentLang);
-document.documentElement.classList.add("js");
+try {
+  const saved = localStorage.getItem("lang");
+  if (saved === "en") applyLanguage("en");
+} catch (err) {}
