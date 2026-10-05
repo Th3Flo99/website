@@ -8,6 +8,8 @@ const translations = {
     "nav.direction": "Ambitie",
     "nav.contact": "Contact",
     "hero.location": "Oudenaarde, België",
+    "hero.status": "Open voor een commerciële rol",
+    "hero.scroll": "Scroll",
     "hero.eyebrow": "Technologie. Business. Mensen.",
     "hero.title1": "Technische basis.",
     "hero.title2": "Commerciële ambitie.",
@@ -183,6 +185,8 @@ const translations = {
     "nav.direction": "Direction",
     "nav.contact": "Contact",
     "hero.location": "Oudenaarde, Belgium",
+    "hero.status": "Open to a commercial role",
+    "hero.scroll": "Scroll",
     "hero.eyebrow": "Technology. Business. People.",
     "hero.title1": "Technical background.",
     "hero.title2": "Commercial ambition.",
@@ -401,8 +405,20 @@ document.querySelectorAll(".lang-btn").forEach((button) => {
 const motionOk = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (motionOk) document.documentElement.classList.add("motion");
 
+const progress = document.getElementById("scroll-progress");
+const timeline = document.querySelector(".timeline");
 function onScroll() {
   header.classList.toggle("is-scrolled", window.scrollY > 8);
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  const ratio = max > 0 ? window.scrollY / max : 0;
+  if (progress) progress.style.width = `${Math.min(100, ratio * 100)}%`;
+  if (timeline) {
+    const rect = timeline.getBoundingClientRect();
+    const start = window.innerHeight * 0.75;
+    const travel = rect.height + start;
+    const seen = Math.min(Math.max(start - rect.top, 0), travel);
+    timeline.style.setProperty("--draw", `${(seen / travel) * 100}%`);
+  }
 }
 onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });

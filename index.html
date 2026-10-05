@@ -38,7 +38,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css?v=20261005b" />
+    <link rel="stylesheet" href="css/style.css?v=20261005c" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -67,6 +67,7 @@
     </script>
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
     <a class="skip-link" href="#main" data-i18n="skip">Ga naar de inhoud</a>
     <header class="site-header" id="site-header">
       <a class="logo" href="#home" aria-label="Florian Ronsse, home">FR<span>.</span></a>
@@ -101,6 +102,7 @@
     <main id="main" tabindex="-1">
       <section id="home" class="hero">
         <div class="hero-copy">
+          <p class="status"><span class="pulse" aria-hidden="true"></span><span data-i18n="hero.status">Open voor een commerciële rol</span></p>
           <p class="eyebrow" data-i18n="hero.eyebrow">Technologie. Business. Mensen.</p>
           <h1>
             <span data-i18n="hero.title1">Technische basis.</span>
@@ -135,6 +137,7 @@
             <dd data-i18n="hero.businessDesc">Groeien in business en klantrelaties.</dd>
           </div>
         </dl>
+        <a class="scroll-cue" href="#about"><span data-i18n="hero.scroll">Scroll</span></a>
       </section>
 
       <section id="about" class="section">
@@ -469,6 +472,6 @@
         <a href="https://roundfair.support" target="_blank" rel="noopener noreferrer">Roundfair</a>
       </div>
     </footer>
-    <script src="js/main.js?v=20261005b" defer></script>
+    <script src="js/main.js?v=20261005c" defer></script>
   </body>
 </html>
