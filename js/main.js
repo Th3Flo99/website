@@ -397,11 +397,6 @@ document.querySelectorAll(".lang-btn").forEach((button) => {
   button.addEventListener("click", () => applyLanguage(button.dataset.lang));
 });
 
-function onScroll() {
-  header.classList.toggle("is-scrolled", window.scrollY > 12);
-}
-onScroll();
-window.addEventListener("scroll", onScroll, { passive: true });
 
 burger.addEventListener("click", () => {
   const open = burger.getAttribute("aria-expanded") !== "true";
