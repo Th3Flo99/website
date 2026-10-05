@@ -398,6 +398,36 @@ document.querySelectorAll(".lang-btn").forEach((button) => {
 });
 
 
+const motionOk = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (motionOk) document.documentElement.classList.add("motion");
+
+function onScroll() {
+  header.classList.toggle("is-scrolled", window.scrollY > 8);
+}
+onScroll();
+window.addEventListener("scroll", onScroll, { passive: true });
+
+if (motionOk) {
+  const nodes = document.querySelectorAll(
+    ".hero-copy > *, .hero-stats > div, .section-label, .split > *, .section-intro > *, .xp, .skill-grid article, .project-grid article, .product, .note, .areas article, .contact-form, .tech-row"
+  );
+  nodes.forEach((node, index) => {
+    node.classList.add("reveal");
+    node.style.setProperty("--d", `${(index % 5) * 80}ms`);
+  });
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-in");
+      revealObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.18, rootMargin: "0px 0px -6% 0px" });
+  nodes.forEach((node) => revealObserver.observe(node));
+  document.querySelectorAll(".hero .reveal").forEach((node) => node.classList.add("is-in"));
+}
+
+
+
 burger.addEventListener("click", () => {
   const open = burger.getAttribute("aria-expanded") !== "true";
   burger.setAttribute("aria-expanded", String(open));
