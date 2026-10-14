@@ -28,7 +28,7 @@ const translations = {
     "hero.focus": "Mijn volgende stap",
     "about.title": "Technologie begrijpen. Mensen verder helpen.",
     "about.p1":
-      "Ik ben Florian. In softwaresupport werkte ik met zakelijke gebruikers die duidelijkheid nodig hadden: wat loopt er mis, wat is er nodig en hoe kunnen ze verder? Ik leerde hun situatie onderzoeken en productkennis vertalen naar uitleg waar ze mee aan de slag konden.",
+      "Ik ben Florian. In softwaresupport werk ik met zakelijke gebruikers die duidelijkheid nodig hebben: wat loopt er mis, wat is er nodig en hoe kunnen ze verder? Ik onderzoek hun situatie en vertaal productkennis naar uitleg waar ze mee aan de slag kunnen.",
     "about.p2":
       "Dat werk vraagt meer dan technische kennis. Goed luisteren, verwachtingen afstemmen en vragen blijven opvolgen zijn essentieel om vertrouwen op te bouwen. Juist die combinatie van klanten begrijpen en oplossingen uitleggen neem ik mee naar een commerciële functie.",
     "about.p3":
@@ -43,7 +43,7 @@ const translations = {
     "xp.1.period": "Nov 2022 tot heden",
     "xp.1.title": "Support Agent",
     "xp.1.desc":
-      "Aanspreekpunt voor zakelijke klanten met softwarevragen. Doorvragen over hun werkwijze en het probleem om te begrijpen wat zij nodig hadden om verder te kunnen.",
+      "Aanspreekpunt voor zakelijke klanten met softwarevragen. Doorvragen over hun werkwijze en het probleem om te begrijpen wat zij nodig hebben om verder te kunnen.",
     "xp.customer": "Klantcommunicatie",
     "xp.product": "Productkennis",
     "xp.ownership": "Opvolging & ownership",
@@ -57,7 +57,7 @@ const translations = {
       "Praktijkervaring met verwarmingsinstallaties, zonnepanelen en elektrische voorzieningen. De start van mijn technische achtergrond en mijn interesse in hoe systemen werken.",
     "skills.title": "Wat ik meebreng naar een commerciële rol.",
     "skills.intro":
-      "Vaardigheden die ik in softwaresupport toepaste en in eigen projecten verder ontwikkel. Ze vormen een concrete basis om het commerciële vak te leren.",
+      "Vaardigheden die ik in softwaresupport toepas en in eigen projecten verder ontwikkel. Ze vormen een concrete basis om het commerciële vak te leren.",
     "skill.0.title": "Klantcommunicatie",
     "skill.0.desc":
       "Professioneel communiceren met zakelijke gebruikers: luisteren, gerichte vragen stellen en uitleg afstemmen op hun technische kennis.",
@@ -153,7 +153,7 @@ const translations = {
       "Bij escalaties samenwerken met het ontwikkelingsteam en de klantvraag en technische bevindingen duidelijk overbrengen.",
     "why.title": "Waarom commerciële functies",
     "why.customer":
-      "In support merkte ik dat niet alleen de techniek mij boeit, maar ook het gesprek: begrijpen wat een klant nodig heeft, uitleggen waarom een oplossing werkt en zorgen dat iemand tevreden verder kan.",
+      "In support merk ik dat niet alleen de techniek mij boeit, maar ook het gesprek: begrijpen wat een klant nodig heeft, uitleggen waarom een oplossing werkt en zorgen dat iemand tevreden verder kan.",
     "why.next":
       "Een commerciële functie is een bewuste volgende stap: voortbouwen op die ervaring, met meer verantwoordelijkheid voor klanten, relaties, business en commerciële resultaten.",
     "roundfair.usersLabel": "Gebruikersbehoefte",
@@ -201,7 +201,7 @@ const translations = {
     "hero.focus": "My next step",
     "about.title": "Understand technology. Help people move forward.",
     "about.p1":
-      "I’m Florian. In software support, I worked with business users who needed clarity: what is going wrong, what do they need and how can they move forward? I learned to investigate their situation and turn product knowledge into guidance they could use.",
+      "I’m Florian. In software support, I work with business users who need clarity: what is going wrong, what do they need and how can they move forward? I investigate their situation and turn product knowledge into guidance they can use.",
     "about.p2":
       "That work takes more than technical knowledge. Listening carefully, aligning expectations and following through on questions are essential to building trust. Understanding customers and explaining solutions are the strengths I bring to a commercial role.",
     "about.p3":
@@ -216,7 +216,7 @@ const translations = {
     "xp.1.period": "Nov 2022 to present",
     "xp.1.title": "Support Agent",
     "xp.1.desc":
-      "A point of contact for business customers with software questions. Asking about their workflow and the problem to understand what they needed to move forward.",
+      "A point of contact for business customers with software questions. Asking about their workflow and the problem to understand what they need to move forward.",
     "xp.customer": "Customer communication",
     "xp.product": "Product knowledge",
     "xp.ownership": "Follow through & ownership",
@@ -230,7 +230,7 @@ const translations = {
       "Practical experience with heating systems, solar panels and electrical installations. The starting point for my technical background and interest in how systems work.",
     "skills.title": "What I bring to a commercial role.",
     "skills.intro":
-      "Skills I applied in software support and continue to develop through personal projects. They provide a practical foundation for learning the commercial side of the business.",
+      "Skills I apply in software support and continue to develop through personal projects. They provide a practical foundation for learning the commercial side of the business.",
     "skill.0.title": "Customer communication",
     "skill.0.desc":
       "Communicating professionally with business users: listening, asking focused questions and adapting explanations to their technical knowledge.",
@@ -326,7 +326,7 @@ const translations = {
       "Working with the development team on escalations and clearly communicating the customer’s question and technical findings.",
     "why.title": "Why Commercial Roles",
     "why.customer":
-      "In support, I found that the conversation matters to me as much as the technology: understanding what a customer needs, explaining why a solution works and helping them move forward with confidence.",
+      "In support, I find that the conversation matters to me as much as the technology: understanding what a customer needs, explaining why a solution works and helping them move forward with confidence.",
     "why.next":
       "A commercial role is a deliberate next step: building on that experience with more responsibility for customers, relationships, business and commercial results.",
     "roundfair.usersLabel": "User need",
