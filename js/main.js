@@ -40,11 +40,7 @@ const translations = {
     "experience.title": "Ervaring met klanten als vertrekpunt.",
     "experience.intro":
       "Mijn basis: professioneel klantcontact, software begrijpelijk maken en verantwoordelijkheid nemen voor de opvolging van vragen.",
-    "xp.0.period": "2026 tot heden",
-    "xp.0.title": "ICT Field Engineer",
-    "xp.0.desc":
-      "Ervaring opdoen in een technische werkomgeving op locatie, met aandacht voor praktisch werken en het stapsgewijs analyseren van problemen.",
-    "xp.1.period": "Nov 2022 tot 2026",
+    "xp.1.period": "Nov 2022 tot heden",
     "xp.1.title": "Support Agent",
     "xp.1.desc":
       "Aanspreekpunt voor zakelijke klanten met softwarevragen. Doorvragen over hun werkwijze en het probleem om te begrijpen wat zij nodig hadden om verder te kunnen.",
@@ -217,11 +213,7 @@ const translations = {
     "experience.title": "Experience built around customers.",
     "experience.intro":
       "My foundation: professional customer communication, making software understandable and taking responsibility for following up on questions.",
-    "xp.0.period": "2026 to present",
-    "xp.0.title": "ICT Field Engineer",
-    "xp.0.desc":
-      "Gaining experience in a technical environment on site, with a focus on practical work and analysing problems step by step.",
-    "xp.1.period": "Nov 2022 to 2026",
+    "xp.1.period": "Nov 2022 to present",
     "xp.1.title": "Support Agent",
     "xp.1.desc":
       "A point of contact for business customers with software questions. Asking about their workflow and the problem to understand what they needed to move forward.",
